@@ -3,7 +3,8 @@ title: Badge
 desc: The QBadge Vue component allows you to display information like contextual data that needs to stand out and get noticed.
 keys: QBadge
 ---
-The QBadge component allows you to create a small badge for adding information like contextual data that needs to stand out and get noticed. It is also often useful in combination with other elements like a user avatar to show a number of new messages.
+
+QBadge（徽标）组件用于创建一个小徽标来添加一些引人注目的信息，例如经常有人把他放在头像组件上来显示有几条新消息。
 
 ## QBadge API
 
