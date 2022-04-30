@@ -10,7 +10,8 @@
     "dev:ssr": "quasar dev -m ssr",
     "build": "node build/search/index.js && cp node_modules/quasar/dist/api/* public/quasar-api/ && quasar build -m ssr",
     "lint": "eslint --ext .js,.vue ./ --fix",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "start": "cd ./dist/quasar.dev && npm i && npm run start"
   },
   "dependencies": {
     "@quasar/extras": "^1.12.4",
