@@ -7,9 +7,9 @@ related:
   - /quasar-cli-webpack/developing-electron-apps/frameless-electron-window
 ---
 
-The QBar is a small component for creating the top bar on different types of mobile or desktop websites/apps. For instance, in desktop apps QBar will have things like the close, minimize or maximize buttons and other menu controls for your application.
+QBar组件是一个小的顶部栏组件，在不同的平台上有不同的表现，例如，在桌面应用上，它会有关闭，最小化，最大化等按钮来控制你的应用程序。
 
-QBar is especially useful for frame-less Electron apps where you integrate it in the QHeader.
+QBar组件在无边框的electron应用中尤其有用，你可以将它集成到QHeader中。
 
 ## QBar API
 
@@ -18,7 +18,7 @@ QBar is especially useful for frame-less Electron apps where you integrate it in
 ## Usage
 
 ::: tip
-For responsiveness, use [Visibility](/style/visibility#Window-Width-Related) Quasar CSS Classes. For finer tuning you can go write your own CSS media breakpoints or even go with [QResizeObserver](/vue-components/resize-observer).
+对于响应性，使用[Visibility](/style/visibility#Window-Width-Related)  Quasar内置的CSS类。为了更好地调整，你可以编写自己的CSS媒体断点，或者使用[QResizeObserver](/vue-components/resize-observer)。
 :::
 
 ### Styling
@@ -40,6 +40,6 @@ For responsiveness, use [Visibility](/style/visibility#Window-Width-Related) Qua
 <doc-example title="QHeader with QToolbar" file="QBar/Header" />
 
 ### Frameless Electron Window
-QBar component can come in really handy when developing Electron apps, especially if you choose to use a frameless window.
+QBar组件在开发Electron应用程序时非常方便，特别是当你选择使用无框架（frameless）窗口时。
 
-Read more on [Frameless Electron Window](/quasar-cli/developing-electron-apps/frameless-electron-window) page.
+关于 [Frameless Electron Window](/quasar-cli/developing-electron-apps/frameless-electron-window) 。
