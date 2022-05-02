@@ -4,7 +4,7 @@
     <q-input
       filled
       color="teal"
-      hint="Type then hit Enter key above"
+      hint="输入后试试使用Enter键来提交"
       v-model="test"
     />
 
