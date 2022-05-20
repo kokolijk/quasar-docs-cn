@@ -13,12 +13,12 @@ import express from 'express'
 import compression from 'compression'
 
 /**
-  * Create your webserver and return its instance.
-  * If needed, prepare your webserver to receive
-  * connect-like middlewares.
-  *
-  * Should NOT be async!
-  */
+ * Create your webserver and return its instance.
+ * If needed, prepare your webserver to receive
+ * connect-like middlewares.
+ *
+ * Should NOT be async!
+ */
 export function create (/* { ... } */) {
   const app = express()
 
@@ -32,48 +32,52 @@ export function create (/* { ... } */) {
 }
 
 /**
-  * You need to make the server listen to the indicated port
-  * and return the listening instance or whatever you need to
-  * close the server with.
-  *
-  * The "listenResult" param for the "close()" definition below
-  * is what you return here.
-  *
-  * For production, you can instead export your
-  * handler for serverless use or whatever else fits your needs.
-  */
-export async function listen ({ app, port, isReady }) {
-  await isReady()
-  return await app.listen(port, () => {
-    if (process.env.PROD) {
-      // eslint-disable-next-line no-console
-      console.log('Server listening at port ' + port)
+ * You need to make the server listen to the indicated port
+ * and return the listening instance or whatever you need to
+ * close the server with.
+ *
+ * The "listenResult" param for the "close()" definition below
+ * is what you return here.
+ *
+ * For production, you can instead export your
+ * handler for serverless use or whatever else fits your needs.
+ */
+export function listen ({ app, port, isReady, ssrHandler }) {
+  if (process.env.DEV) {
+    isReady()
+    return app.listen(port, () => {
+      if (process.env.PROD) {
+        // eslint-disable-next-line no-console
+        console.log('Server listening at port ' + port)
+      }
+    })
+  } else {
+    return {
+      handler: ssrHandler
     }
-  })
+  }
 }
 
 /**
-  * Should close the server and free up any resources.
-  * Will be used on development only when the server needs
-  * to be rebooted.
-  *
-  * Should you need the result of the "listen()" call above,
-  * you can use the "listenResult" param.
-  *
-  * Can be async.
-  */
+ * Should close the server and free up any resources.
+ * Will be used on development only when the server needs
+ * to be rebooted.
+ *
+ * Should you need the result of the "listen()" call above,
+ * you can use the "listenResult" param.
+ *
+ * Can be async.
+ */
 export function close ({ listenResult }) {
   return listenResult.close()
 }
 
-const maxAge = process.env.DEV
-  ? 0
-  : 1000 * 60 * 60 * 24 * 30
+const maxAge = process.env.DEV ? 0 : 1000 * 60 * 60 * 24 * 30
 
 /**
-  * Should return middleware that serves the indicated path
-  * with static content.
-  */
+ * Should return middleware that serves the indicated path
+ * with static content.
+ */
 export function serveStaticContent (path, opts) {
   return express.static(path, {
     maxAge,
@@ -90,9 +94,9 @@ const jpgRE = /\.jpe?g$/
 const pngRE = /\.png$/
 
 /**
-  * Should return a String with HTML output
-  * (if any) for preloading indicated file
-  */
+ * Should return a String with HTML output
+ * (if any) for preloading indicated file
+ */
 export function renderPreloadTag (file) {
   if (jsRE.test(file) === true) {
     return `<link rel="modulepreload" href="${file}" crossorigin>`
