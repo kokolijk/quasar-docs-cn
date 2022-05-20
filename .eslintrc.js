@@ -34,6 +34,7 @@ module.exports = {
 
   // add your custom rules here
   rules: {
+    'brace-style': 'off',
     'prefer-const': 2,
     'prefer-promise-reject-errors': 'off',
     'multiline-ternary': 'off',
