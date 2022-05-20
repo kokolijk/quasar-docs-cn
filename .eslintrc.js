@@ -2,7 +2,7 @@ module.exports = {
   root: true,
 
   parserOptions: {
-    ecmaVersion: '2021', // Allows for the parsing of modern ECMAScript features
+    ecmaVersion: '2021' // Allows for the parsing of modern ECMAScript features
   },
 
   env: {
@@ -19,10 +19,7 @@ module.exports = {
   ],
 
   // required to lint *.vue files
-  plugins: [
-    'vue',
-    'quasar'
-  ],
+  plugins: ['vue', 'quasar'],
 
   globals: {
     ga: true, // Google Analytics
@@ -37,12 +34,11 @@ module.exports = {
 
   // add your custom rules here
   rules: {
-    'brace-style': [ 2, 'stroustrup', { 'allowSingleLine': true } ],
     'prefer-const': 2,
     'prefer-promise-reject-errors': 'off',
     'multiline-ternary': 'off',
-    'array-bracket-spacing': [ 'error', 'always', { singleValue: false } ],
-    'computed-property-spacing': [ 'error', 'always' ],
+    'array-bracket-spacing': ['error', 'always', { singleValue: false }],
+    'computed-property-spacing': ['error', 'always'],
     'no-prototype-builtins': 'off',
     'no-case-declarations': 'off',
     'generator-star-spacing': 'off',
