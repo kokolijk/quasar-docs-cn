@@ -20,7 +20,7 @@ The following examples are best seen on desktop as they make too little sense on
 You can also take a look at [Layout Drawer](/layout/drawer) to see some more examples of it in action.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Vertical content" file="QScrollArea/Vertical" />
 

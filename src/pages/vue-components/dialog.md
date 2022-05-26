@@ -31,7 +31,7 @@ Rather than cluttering your .vue templates with QDialogs, it's best if you write
 It's best that your QDialog main content is a QCard. However, if you are planning on using any other component (like QForm) or tag, make sure that the direct child of QDialog is rendered with a `<div>` tag (or wrap it with one yourself).
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QDialog/Basic" />
 

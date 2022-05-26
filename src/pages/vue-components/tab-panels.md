@@ -35,7 +35,7 @@ Do not be mistaken by the "QTabPanels" component name. Panels do not require QTa
 * Should you need the `keep-alive-include` or `keep-alive-exclude` props then the QTabPanel `name`s must be valid Vue component names (no spaces allowed, don't start with a number etc).
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QTabPanels/Basic" />
 

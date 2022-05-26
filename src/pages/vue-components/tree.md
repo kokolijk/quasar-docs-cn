@@ -11,7 +11,7 @@ Quasar Tree represents a highly configurable component that displays hierarchica
 
 ## Usage 用法
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QTree/Basic" />
 

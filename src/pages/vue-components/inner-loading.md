@@ -27,7 +27,7 @@ In order for the spinner to be properly placed in the center of the element you 
 QInnerLoading must be the last element inside its parent so it can appear on top of the other content.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QInnerLoading/Basic" />
 

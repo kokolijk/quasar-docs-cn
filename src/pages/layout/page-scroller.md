@@ -27,7 +27,7 @@ Since QPageScroller needs a layout and QLayout by default manages the entire win
 * QPageScroller must be the last child element within its parent, so it can display on top of other content
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QPageScroller/Basic" />
 

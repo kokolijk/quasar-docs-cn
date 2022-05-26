@@ -18,7 +18,7 @@ They are basically [QItem](/vue-components/list-and-list-items) components wrapp
 
 ## Usage 用法
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QExpansionItem/Basic" />
 

@@ -18,7 +18,7 @@ Alternatively, you can also use it to render content only on server-side and it 
 
 ## Usage 用法
 
-### Basic
+### Basic 基础
 
 ```html
 <q-no-ssr>

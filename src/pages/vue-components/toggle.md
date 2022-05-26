@@ -20,7 +20,7 @@ Please also refer to the [QOptionGroup](/vue-components/option-group) on other p
 
 ## Usage 用法
 
-### Basic
+### Basic 基础
 
 Use the `color` prop to control the toggle’s color.
 

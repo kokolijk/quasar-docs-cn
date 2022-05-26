@@ -15,7 +15,7 @@ Notify is a Quasar plugin that can display animated messages (floating above eve
 
 ## Usage 用法
 
-### Basic
+### Basic 基础
 
 ```js
 // outside of a Vue file

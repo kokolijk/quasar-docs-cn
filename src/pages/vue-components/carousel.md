@@ -30,7 +30,7 @@ QCarousel组件允许您使用幻灯片以更少的空间显示更多信息。�
 * 如果你需要`keep-alive-include`或`keep-alive-exclude`属性，那么QCarouselSlide的`name`属性必须是有效的Vue组件名称(不允许空格，不要以数字开头等)。
 :::
 
-### Basic
+### Basic 基础
 
 下面是一个不带导航按钮的最基础的幻灯片示例（只带有动画和自定义的过渡效果），通过`v-model`来控制当前展示的画面。
 

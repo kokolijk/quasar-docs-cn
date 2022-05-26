@@ -30,7 +30,7 @@ There is a maximum height of the scrolling container, imposed by each browser. I
 
 Scroll the examples below to see QVirtualScroll in action.
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QVirtualScroll/Basic" />
 

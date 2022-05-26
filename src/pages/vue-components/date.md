@@ -24,7 +24,7 @@ For handling date and/or time, also check out [Quasar Date Utils](/quasar-utils/
 Notice that the actual date(s) of the model are all in String format.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QDate/Basic" overflow />
 

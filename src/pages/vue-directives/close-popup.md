@@ -15,7 +15,7 @@ This directive is a helper when dealing with [QDialog](/vue-components/dialog) a
 
 ## Usage 用法
 
-### Basic
+### Basic 基础
 
 <doc-example title="With a QMenu" file="ClosePopup/Menu" />
 

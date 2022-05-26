@@ -23,7 +23,7 @@ The use of the `before` and `after` slots is required.
 
 Click and drag on the splitter separator bar to see results.
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QSplitter/Basic" />
 

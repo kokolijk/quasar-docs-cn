@@ -27,7 +27,7 @@ Qcard组件很轻巧，它实际上是一个容器元素，你可以使用QCard�
 你可以在卡片中使用[排版](/style/typography)来创造精美的卡片。
 :::
 
-### Basic
+### Basic 基础
 <doc-example title="Basic cards" file="QCard/Basic" />
 
 ### With actions

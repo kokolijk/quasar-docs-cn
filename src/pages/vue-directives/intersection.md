@@ -48,7 +48,7 @@ The handler Function takes one parameter, which is an [IntersectionObserverEntry
 Scroll within the examples below until the observed element is in view. Then scroll it out of view.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="Intersection/Basic" no-edit />
 

@@ -22,7 +22,7 @@ For handling date and/or time, also check out [Quasar Date Utils](/quasar-utils/
 
 Notice that the model is a String only.
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QTime/Basic" overflow />
 

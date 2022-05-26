@@ -72,7 +72,7 @@ This is not an exhaustive list of what you can do with Dialogs as Quasar Plugins
 
 <doc-example title="Other options" file="Dialog/OtherOptions" />
 
-### Basic validation
+### Basic 基础 validation
 
 There is a basic validation system that you can use so that the user won't be able to submit the dialog (click/tap on "OK" or press <kbd>ENTER</kbd>) until the expected values are filled in.
 

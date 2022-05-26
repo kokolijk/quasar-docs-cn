@@ -25,7 +25,7 @@ Don't forget to use the directive `v-close-popup` in your clickable menu items i
 Alternatively, you can use the QMenu's property `auto-close` or handle closing the menu yourself through its v-model.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QMenu/Basic" />
 

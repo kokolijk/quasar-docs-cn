@@ -33,7 +33,7 @@ By default, QDrawer has touch actions attached to it. If this interferes with yo
 When QDrawer is set into overlay mode, **it will force it to go into fixed position**, regardless if QLayout's "view" prop is configured with  "l/r" or "L/R". Also, **if on iOS platform and QLayout is containerized**, the fixed position will also be forced upon QDrawer due to platform limitations that cannot be overcome.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QDrawer/Basic" />
 

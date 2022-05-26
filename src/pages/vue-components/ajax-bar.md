@@ -30,7 +30,7 @@ QAjaxBar组件默认会自动捕获Ajax调用，然后展示它的进度。(除�
 出于演示的目的，下面的示例是使用手动触发的方式。当你点击按钮的时候页面的底部会出现一个10px左右的进度条，当然他的大小和颜色都是可以自定义的，
 请查阅Api部分以帮助你了解它的所有属性。
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QAjaxBar/Basic" />
 
