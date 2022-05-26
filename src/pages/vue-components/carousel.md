@@ -37,7 +37,7 @@ QCarousel组件允许您使用幻灯片以更少的空间显示更多信息。�
 
 <doc-example title="Basic" file="QCarousel/Basic" />
 
-### Transitions
+### Transitions 过渡
 
 下面的示例中:
 
@@ -46,34 +46,34 @@ QCarousel组件允许您使用幻灯片以更少的空间显示更多信息。�
 
 <doc-example title="Transitions, bottom navigation, arrows and auto padding" file="QCarousel/Transitions" />
 
-### Vertical
+### Vertical 垂直
 
 <doc-example title="Vertical mode" file="QCarousel/Vertical" />
 
-### Control type
+### Control type 控件类型
 
-这里的控制是指的是箭头和导航按钮，虽然它们是按钮元素，但是仍可以选择它们的类型来更好地应对你的设计。`control-color` 和 `control-text-color`属性也会对你有帮助。
+这里的控件是指的是箭头和导航按钮，虽然它们是按钮元素，但是仍可以选择它们的类型来更好地应对你的设计。`control-color` 和 `control-text-color`属性也会对你有帮助。
 
 <doc-example title="Control Type" file="QCarousel/ControlType" />
 
-### Navigation position
+### Navigation position 导航的位置
 
 <doc-example title="Navigation position" file="QCarousel/NavigationPosition" />
 
-### Custom navigation
+### Custom navigation 自定义导航
 
 关于`navigation-icon`插槽的完整属性列表，请见页面上方的API卡片
 
 <doc-example title="Custom navigation" file="QCarousel/CustomNavigation" />
 
-### Auto padding
+### Auto padding 自动填充
 
 
 下面的示例中你可以对QCarousel做出不同的设置后观看控件间padding的变化：
 
 <doc-example title="Padding" file="QCarousel/AutoPadding" />
 
-### Media content
+### Media content 媒体内容
 
 <doc-example title="Image slides" file="QCarousel/ImageSlides" />
 
@@ -97,11 +97,11 @@ QCarousel组件允许您使用幻灯片以更少的空间显示更多信息。�
 
 <doc-example title="Autoplay" file="QCarousel/InfiniteAutoplay" />
 
-### Controls
+### Controls 控件
 
 <doc-example title="Controls" file="QCarousel/Controls" />
 
-### With QScrollArea
+### With QScrollArea 搭配QScrollArea
 
 请注意下面两个示例中如何使用[QScrollArea](/vue-components/scroll-area)。还要注意第二个示例中的`q-carousel--padding`CSS类名。
 
@@ -109,6 +109,6 @@ QCarousel组件允许您使用幻灯片以更少的空间显示更多信息。�
 
 <doc-example title="With QScrollArea on whole slide" file="QCarousel/WithScrollareaFull" />
 
-### Fullscreen
+### Fullscreen 全屏
 
 <doc-example title="Fullscreen" file="QCarousel/Fullscreen" />
