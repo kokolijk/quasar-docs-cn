@@ -21,7 +21,7 @@ Not all browsers support the Intersection Observer API. Most [modern browsers](h
 
 <doc-api file="QIntersection" />
 
-## Usage
+## Usage 用法
 
 ::: warning
 In most cases, it is required that you apply CSS to the QIntersection element so that it acts as a necessary filler when the inner content is not rendered. This will allow for a smooth scrolling experience, because otherwise the scroll will jump erratically.

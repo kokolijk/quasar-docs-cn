@@ -13,7 +13,7 @@ The QSlideItem component is essentially a [QItem](/vue-components/list-and-list-
 
 <doc-api file="QSlideItem" />
 
-## Usage
+## Usage 用法
 Drag with the mouse or use your finger to pan to left or right side to see QSlideItem in action.
 
 ::: tip

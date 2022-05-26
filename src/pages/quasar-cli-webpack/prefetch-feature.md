@@ -85,7 +85,7 @@ Now, let's see how the hooks are called when the user visits these routes in the
 | `/shop/product/shoes/overview` | ShopProduct then ShopProductOverview | ShopProduct has route params so it is called even though it's already rendered. |
 | `/` | LandingPage | - |
 
-## Usage
+## Usage 用法
 The hook is defined as a custom static function called `preFetch` on our route components. Note that because this function will be called before the components are instantiated, it doesn't have access to `this`.
 
 ```html
@@ -304,7 +304,7 @@ Also note that because the module is now a dependency of the route component, it
 Don't forget to use the `preserveState: true` option for `registerModule` so we keep the state injected by the server.
 :::
 
-### Usage with Vuex and TypeScript
+### Usage 用法 with Vuex and TypeScript
 
 You can use `preFetch` helper to type-hint the store parameter (which will otherwise have an `any` type):
 

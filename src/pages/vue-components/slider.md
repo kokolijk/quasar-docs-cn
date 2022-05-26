@@ -14,7 +14,7 @@ Also check its “sibling”, the [QRange](/vue-components/range) component.
 
 <doc-api file="QSlider" />
 
-## Usage
+## Usage 用法
 
 ::: warning
 You are responsible for accommodating the space around QSlider so that the label and marker labels won't overlap the other content on your page. You can use CSS margin or padding for this purpose.

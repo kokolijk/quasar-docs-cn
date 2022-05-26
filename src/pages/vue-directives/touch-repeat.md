@@ -17,7 +17,7 @@ We will be describing `v-touch-repeat` on the lines below.
 
 <doc-api file="TouchRepeat" />
 
-## Usage
+## Usage 用法
 Click and hold with your mouse on the area below to see it in action.
 Notice that on touch capable devices the scrolling is not blocked.
 

@@ -36,7 +36,7 @@ In order to create #2, the options selection form, you have the `options` proper
 
 <doc-installation plugins="Dialog" />
 
-## Usage
+## Usage 用法
 
 ```js
 // outside of a Vue file

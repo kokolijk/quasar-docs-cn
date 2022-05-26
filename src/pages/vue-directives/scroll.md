@@ -18,7 +18,7 @@ This is a Vue directive which takes one parameter (a Function) and fires when us
 
 <doc-api file="Scroll" />
 
-## Usage
+## Usage 用法
 
 ```vue
 <template>

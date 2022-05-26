@@ -12,7 +12,7 @@ The QKnob component is used to take a number input from the user through mouse/t
 
 <doc-api file="QKnob" />
 
-## Usage
+## Usage 用法
 
 By default, QKnob inherits current text color (as arc progress color and inner label color) and current font size (as component size). For customization, you can use the size and color related props.
 

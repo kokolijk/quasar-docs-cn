@@ -17,7 +17,7 @@ We will be describing `v-touch-pan` on the lines below.
 
 <doc-api file="TouchPan" />
 
-## Usage
+## Usage 用法
 Click then pan in a direction with your mouse on the area below to see it in action.
 Page scrolling is prevented, but you can opt out if you wish.
 

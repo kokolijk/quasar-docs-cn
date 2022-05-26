@@ -25,7 +25,7 @@ Web Storage API only retrieves strings. **Quasar retrieves data with its origina
 When running the code server-side on SSR builds, this feature can't work. Web Storage is a browser API only. You can however make use of it on the client-side with SSR.
 :::
 
-## Usage
+## Usage 用法
 
 ```js
 // outside of a Vue file

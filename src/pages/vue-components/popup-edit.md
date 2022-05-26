@@ -15,7 +15,7 @@ This component injects a [QMenu](/vue-components/menu) into its parent DOM eleme
 
 <doc-api file="QPopupEdit" />
 
-## Usage
+## Usage 用法
 
 ::: warning
 If used on a QTable, QPopupEdit won't work with cell scoped slots.

@@ -29,7 +29,7 @@ List Items have the following pre-built child components:
 ## QItemLabel API
 <doc-api file="QItemLabel" />
 
-## Usage
+## Usage 用法
 
 ### Basic
 

@@ -101,7 +101,7 @@ Boot files fulfill one special purpose: they run code **before** the App's Vue r
 ### Example of unneeded usage of boot files
 * For plain JavaScript libraries like Lodash, which don't need any initialization prior to their usage. Lodash, for example, might make sense to use as a boot file only if you want to inject Vue prototype with it, like being able to use `this.$_` inside your Vue files.
 
-## Usage of boot files
+## Usage 用法 of boot files
 The first step is always to generate a new boot file using Quasar CLI:
 
 ```bash

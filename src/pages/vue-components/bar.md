@@ -15,7 +15,7 @@ QBar组件在无边框的electron应用中尤其有用，你可以将它集成�
 
 <doc-api file="QBar" />
 
-## Usage
+## Usage 用法
 
 ::: tip
 对于响应性，使用[Visibility](/style/visibility#Window-Width-Related)  Quasar内置的CSS类。为了更好地调整，你可以编写自己的CSS媒体断点，或者使用[QResizeObserver](/vue-components/resize-observer)。

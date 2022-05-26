@@ -14,7 +14,7 @@ QBtnDropdown组件时一个非常方便的下拉式按钮。与[QList](/vue-comp
 
 <doc-api file="QBtnDropdown" />
 
-## Usage
+## Usage 用法
 
 <doc-example title="Basic" file="QBtnDropdown/Basic" />
 

@@ -19,7 +19,7 @@ Works great along with [QTabs](/vue-components/tabs) but it is not required to b
 
 <doc-api file="QTabPanel" />
 
-## Usage
+## Usage 用法
 
 ::: tip
 * Works great along with [QTabs](/vue-components/tabs), a component which offers a nice way to select the active tab panel to display.

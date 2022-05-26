@@ -14,7 +14,7 @@ related:
 
 <doc-api file="QBtnGroup" />
 
-## Usage
+## Usage 用法
 <doc-example title="Examples" file="QBtnGroup/Group" />
 
 ::: warning

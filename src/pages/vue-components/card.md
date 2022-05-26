@@ -21,7 +21,7 @@ Qcard组件很轻巧，它实际上是一个容器元素，你可以使用QCard�
 ## QCardActions API
 <doc-api file="QCardActions" />
 
-## Usage
+## Usage 用法
 
 ::: tip
 你可以在卡片中使用[排版](/style/typography)来创造精美的卡片。

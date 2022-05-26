@@ -11,7 +11,7 @@ There are two modes in which QPagination operates: with buttons only or with an 
 
 <doc-api file="QPagination" />
 
-## Usage
+## Usage 用法
 
 ### Standard
 

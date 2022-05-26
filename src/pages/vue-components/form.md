@@ -15,7 +15,7 @@ The QForm component renders a `<form>` DOM element and allows you to easily vali
 
 <doc-api file="QForm" />
 
-## Usage
+## Usage 用法
 
 ::: warning
 Please be aware of the following:

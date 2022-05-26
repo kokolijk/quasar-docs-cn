@@ -13,7 +13,7 @@ Notify is a Quasar plugin that can display animated messages (floating above eve
 
 <doc-installation plugins="Notify" config="notify" />
 
-## Usage
+## Usage 用法
 
 ### Basic
 

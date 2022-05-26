@@ -18,7 +18,7 @@ The QBtnToggle component is another basic element for user input, similar to QRa
 
 <doc-api file="QBtnToggle" />
 
-## Usage
+## Usage 用法
 
 ### Basic
 

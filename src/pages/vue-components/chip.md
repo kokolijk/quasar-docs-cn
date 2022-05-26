@@ -21,7 +21,7 @@ Also check out [QBadge](/vue-components/badge).
 
 <doc-api file="QChip" />
 
-## Usage
+## Usage 用法
 <doc-example title="Basic" file="QChip/Basic" />
 
 <doc-example title="Dense" file="QChip/Dense" />

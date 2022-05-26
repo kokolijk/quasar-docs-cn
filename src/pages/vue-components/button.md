@@ -17,7 +17,7 @@ Quasar中的按钮组件叫QBtn，它还带有一些额外实用的特性。例�
 
 <doc-api file="QBtn" />
 
-## Usage
+## Usage 用法
 
 ### 标准
 
@@ -75,7 +75,7 @@ Quasar中的按钮组件叫QBtn，它还带有一些额外实用的特性。例�
 ### 处理导航跳转 <q-badge align="top" color="brand-primary" label="updated for v2.4+" />
 
 ::: warning UMD usage
-* 如果你要使用`to`和`replace`属性，请确保跳转的目标路由已经被你定义在你的项目中了，否则请使用`href`属性。 
+* 如果你要使用`to`和`replace`属性，请确保跳转的目标路由已经被你定义在你的项目中了，否则请使用`href`属性。
 * 鉴于上述原因，下面的一些按钮示例不能运行在Codepen/jsFiddle中，因为Codepen/jsFiddle上的项目没有vue-router
 :::
 

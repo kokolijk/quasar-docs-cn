@@ -12,7 +12,7 @@ Under the hood, it uses the [Mutation Observer API](https://developer.mozilla.or
 
 <doc-api file="Mutation" />
 
-## Usage
+## Usage 用法
 
 Reading the [Mutation Observer API](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) first will be best in your understanding of how this directive works.
 

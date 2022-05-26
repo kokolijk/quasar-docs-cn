@@ -16,7 +16,7 @@ Take full advantage of this feature by using it with **Quasar CLI**, especially 
 
 <doc-installation plugins="Meta" />
 
-## Usage
+## Usage 用法
 What the Meta plugin does is that it enables the use of a special property in your Vue components called `meta`. Take a look at the example below, with almost all of its features.
 
 ::: warning Important!

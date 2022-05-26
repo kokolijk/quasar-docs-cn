@@ -17,7 +17,7 @@ Essentially QPageScroller is very similar to QPageSticky. Whereas a QPageSticky 
 ## QPageScroller API
 <doc-api file="QPageScroller" />
 
-## Usage
+## Usage 用法
 ::: tip
 Since QPageScroller needs a layout and QLayout by default manages the entire window, then for demoing purposes we are going to use containerized QLayouts. But remember that by no means you are required to use containerized QLayouts for QPageScroller.
 :::

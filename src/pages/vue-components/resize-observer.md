@@ -12,7 +12,7 @@ QResizeObserver is a Quasar component that emits a `resize` event whenever the w
 
 <doc-api file="QResizeObserver" />
 
-## Usage
+## Usage 用法
 
 <doc-example title="Basic" file="QResizeObserver/Basic" />
 

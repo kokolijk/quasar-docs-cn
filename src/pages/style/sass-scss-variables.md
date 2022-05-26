@@ -11,7 +11,7 @@ There are Sass/SCSS variables built into Quasar that you can change and/or use w
 This applies to Quasar CLI managed apps only.
 :::
 
-## Usage
+## Usage 用法
 In your app's `*.vue` files or in the .sass/.scss files you can use any Quasar Sass/SCSS variables (examples: `$primary`, `$red-1`), and any other Sass/SCSS variables that you declared in your `/src/css/quasar.variables.sass` or the perfectly equivalent `/src/css/quasar.variables.scss` (depending on your favorite Sass flavour) when using Quasar CLI.
 
 ```html

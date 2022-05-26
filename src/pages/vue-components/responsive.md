@@ -10,7 +10,7 @@ QResponsive is a component which forces the content to maintain an aspect ratio 
 
 <doc-api file="QResponsive" />
 
-## Usage
+## Usage 用法
 
 ::: tip TIPS
 * The component can be used with any content, as long you specify **only one direct child**. If you need multiple elements inside of it, wrap them in a `<div>`.

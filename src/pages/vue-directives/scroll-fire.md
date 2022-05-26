@@ -17,7 +17,7 @@ There is also a [Scroll](/vue-directives/scroll) directive which fires whenever 
 
 <doc-api file="ScrollFire" />
 
-## Usage
+## Usage 用法
 
 ::: tip Scrolling container
 Please read [here](/vue-components/scroll-observer#determining-scrolling-container) about how Quasar determines the container to attach scrolling events to.

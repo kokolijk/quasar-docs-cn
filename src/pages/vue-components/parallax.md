@@ -14,7 +14,7 @@ QParallax takes care of a lot of quirks, including image/video size which can ac
 
 <doc-api file="QParallax" />
 
-## Usage
+## Usage 用法
 
 ::: tip Scrolling container
 Please read [here](/vue-components/scroll-observer#determining-scrolling-container) about how Quasar determines the container to attach scrolling events to.

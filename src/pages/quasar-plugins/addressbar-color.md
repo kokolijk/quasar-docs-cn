@@ -20,7 +20,7 @@ Newer mobile browsers have the ability to specify a color for the addressbar, li
 
 <doc-installation plugins="AddressbarColor" />
 
-## Usage
+## Usage 用法
 
 We create boot file to initialize its usage: `$ quasar new boot addressbar-color [--format ts]`. A file is created (`/src/boot/addressbar-color.js`). We edit it:
 

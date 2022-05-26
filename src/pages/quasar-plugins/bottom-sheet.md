@@ -21,7 +21,7 @@ Bottom Sheets can be displayed as a list or as a grid, with icons or with avatar
 
 <doc-installation plugins="BottomSheet" />
 
-## Usage
+## Usage 用法
 
 ```js
 // outside of a Vue file

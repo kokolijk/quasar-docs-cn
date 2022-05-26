@@ -5,7 +5,7 @@ desc: The list of CSS classes supplied by Quasar for defining elevation on DOM e
 Simple yet effective way to add shadows to create a depth/elevation effect.
 The shadows are in accordance to Material Design specifications (24 levels of depth).
 
-## Usage
+## Usage 用法
 
 | CSS Class Name | Description |
 | --- | --- |

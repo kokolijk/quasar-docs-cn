@@ -7,7 +7,7 @@ The Quasar Screen plugin allows you to have a dynamic and responsive UI when dea
 ## Installation
 You don't need to do anything. The Screen plugin gets installed automatically.
 
-## Usage
+## Usage 用法
 Notice `$q.screen` below. This is just a simple usage example.
 
 ```html

@@ -15,7 +15,7 @@ There are currently two types of QVirtualScroll: "list" (using QItems) and "tabl
 
 <doc-api file="QVirtualScroll" />
 
-## Usage
+## Usage 用法
 
 ::: tip
 * (Composition API) To get the best performance while using large lists, do not wrap the array that you are passing in the `items` prop with ref()/computed()/reactive()/etc. This allows Vue to skip making the list "responsive" to changes.

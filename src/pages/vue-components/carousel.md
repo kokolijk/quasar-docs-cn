@@ -18,7 +18,7 @@ QCarousel组件允许您使用幻灯片以更少的空间显示更多信息。�
 
 <doc-api file="QCarouselSlide" />
 
-## Usage
+## Usage 用法
 
 ::: tip
 如果您在QCarouselSlide中添加了可以滑动导航的图片，那么您可能需要设置`draggable="false"`，否则浏览器的默认行为可能会产生负面影响。

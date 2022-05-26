@@ -13,7 +13,7 @@ QBreadcrumbs （面包屑）组件在UI中用作导航辅助。帮助用户定�
 
 <doc-api file="QBreadcrumbsEl" />
 
-## Usage
+## Usage 用法
 <doc-example title="Basic" file="QBreadcrumbs/Basic" />
 
 <doc-example title="In a QToolbar" file="QBreadcrumbs/Toolbar" />

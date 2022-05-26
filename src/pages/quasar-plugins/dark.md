@@ -18,7 +18,7 @@ For a better understanding of this Quasar plugin, please head to the Style & Ide
 ## Installation
 This plugin is automatically installed. No need to do anything but directly use it.
 
-## Usage
+## Usage 用法
 
 ::: warning
 Do not manually assign a value to `isActive` or `mode` from below. Instead, use the `set(val)` method.

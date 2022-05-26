@@ -16,7 +16,7 @@ Alternatively, you can also use it to render content only on server-side and it 
 
 <doc-api file="QNoSsr" />
 
-## Usage
+## Usage 用法
 
 ### Basic
 

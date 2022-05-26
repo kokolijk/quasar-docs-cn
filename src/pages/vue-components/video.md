@@ -14,7 +14,7 @@ You may also want to check our own HTML 5 video player component: [QMediaPlayer]
 
 <doc-api file="QVideo" />
 
-## Usage
+## Usage 用法
 
 ### Basic
 <doc-example title="Basic" file="QVideo/Basic" />

@@ -6,7 +6,7 @@ related:
 ---
 The build system uses Webpack to create your website/app. Don't worry if you aren't acquainted with Webpack. Out of the box, you won't need to configure it because it already has everything set up.
 
-## Usage with quasar.config.js
+## Usage 用法 with quasar.config.js
 For cases where you need to tweak the default Webpack config you can do so by editing `/quasar.config.js` and configuring `build > extendWebpack (cfg)` method or `build > chainWebpack (chain)`.
 
 Example of adding ESLint loader to Webpack (assuming you've installed it):

@@ -16,7 +16,7 @@ The QSkeleton is a component for displaying a placeholder preview of your conten
 
 <doc-api file="QSkeleton" />
 
-## Usage
+## Usage 用法
 
 <doc-example title="On a QCard" file="QSkeleton/Card" />
 
