@@ -1,5 +1,5 @@
 ---
-title: Why Quasar?
+title: 为什么要选择Quasar?
 desc: What Quasar is and how it can considerably reduce your development time and costs.
 components:
   - introduction-to-quasar/IntroductionVideo
