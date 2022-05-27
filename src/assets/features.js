@@ -35,8 +35,7 @@ function normalizeComps (list) {
   list.forEach(entry => {
     if (entry.children) {
       acc = acc.concat(entry.children)
-    }
-    else {
+    } else {
       acc.push(entry)
     }
   })
@@ -45,7 +44,7 @@ function normalizeComps (list) {
 }
 
 export default {
-  comps: normalizeComps(menu.find(entry => entry.name === 'Vue Components').children),
-  dirs: menu.find(entry => entry.name === 'Vue Directives').children,
-  plugins: menu.find(entry => entry.name === 'Quasar Plugins').children
+  comps: normalizeComps(menu.find(entry => entry.name === 'Vue 组件').children),
+  dirs: menu.find(entry => entry.name === 'Vue 指令').children,
+  plugins: menu.find(entry => entry.name === 'Quasar 插件').children
 }

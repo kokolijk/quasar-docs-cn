@@ -11,7 +11,7 @@ q-page.landing
           | 帮助您在短时间内快速构建高性能，高质量的
           | <span class="text-bold text-no-wrap">Vue.js 3</span> 应用程序
         .landing__hero-row.q-gutter-sm.row.items-center
-          q-btn(color="brand-primary" unelevated no-caps to="/introduction-to-quasar" label="为什么选择Quasar?")
+          q-btn(color="brand-primary" unelevated no-caps to="/introduction-to-quasar" label="为何选择Quasar?")
           q-btn(color="brand-primary" outline no-caps to="/start" label="Get Started")
           q-btn(color="accent" unelevated no-caps to="/video-tutorials" label="视屏教程")
         .q-pb-lg.text-grey-6.landing__hero-quote.text-center

@@ -1,45 +1,45 @@
 [
   {
-    "name": "Why Quasar?",
+    "name": "为何选择Quasar?",
     "icon": "room",
     "path": "introduction-to-quasar"
   },
   {
-    "name": "Sponsors and Backers",
+    "name": "赞助商和支持者",
     "icon": "favorite",
     "path": "sponsors-and-backers"
   },
   {
-    "name": "Why Donations Are Important",
+    "name": "捐赠对我们很重要",
     "icon": "assignment_late",
     "path": "why-donate"
   },
   {
-    "name": "API Explorer",
+    "name": "API 搜索",
     "icon": "travel_explore",
     "path": "api-explorer"
   },
   {
-    "name": "Video Tutorials",
+    "name": "视屏教程",
     "icon": "ondemand_video",
     "path": "video-tutorials"
   },
   {
-    "name": "Meet the Team",
+    "name": "关于团队",
     "icon": "people",
     "path": "meet-the-team"
   },
   {
-    "name": "Getting Started",
+    "name": "开始",
     "icon": "flight_takeoff",
     "path": "start",
     "children": [
       {
-        "name": "Pick Quasar Flavour",
+        "name": "选择Quasar的开发模式",
         "path": "pick-quasar-flavour"
       },
       {
-        "name": "Quasar Flavours",
+        "name": "Quasar 开发模式",
         "opened": true,
         "children": [
           {
@@ -61,7 +61,7 @@
         ]
       },
       {
-        "name": "How to use Vue",
+        "name": "如何使用Vue",
         "path": "how-to-use-vue"
       },
       {
@@ -69,39 +69,39 @@
         "path": "playground"
       },
       {
-        "name": "Release notes",
+        "name": "发行说明",
         "path": "release-notes"
       },
       {
-        "name": "Roadmap",
+        "name": "发展路线",
         "path": "roadmap"
       },
       {
-        "name": "Upgrade guide",
+        "name": "升级指南",
         "badge": "update",
         "path": "upgrade-guide"
       },
       {
-        "name": "VS Code Configuration",
+        "name": "VS Code 配置",
         "path": "vs-code-configuration"
       }
     ]
   },
   {
-    "name": "Contribution Guide",
+    "name": "参与贡献",
     "icon": "code",
     "path": "contribution-guide",
     "children": [
       {
-        "name": "Contribution Guide",
+        "name": "贡献指南",
         "path": "contribution-guide"
       },
       {
-        "name": "Running Projects",
+        "name": "运行项目",
         "path": "running-projects"
       },
       {
-        "name": "Start a New Project",
+        "name": "开始一个新的项目",
         "path": "new-project"
       },
       {
@@ -109,7 +109,7 @@
         "path": "project-maintainer"
       },
       {
-        "name": "Commit Conventions",
+        "name": "Commit 规则",
         "path": "commit-conventions"
       }
     ]
@@ -170,36 +170,36 @@
     ]
   },
   {
-    "name": "Style & Identity",
+    "name": "样式特性",
     "icon": "style",
     "path": "style",
     "children": [
       {
-        "name": "Typography",
+        "name": "排版",
         "path": "typography"
       },
       {
-        "name": "Color Palette",
+        "name": "调色板",
         "path": "color-palette"
       },
       {
-        "name": "Theme Builder",
+        "name": "主题构建器",
         "path": "theme-builder"
       },
       {
-        "name": "Dark Mode",
+        "name": "黑暗模式",
         "path": "dark-mode"
       },
       {
-        "name": "Spacing",
+        "name": "间距",
         "path": "spacing"
       },
       {
-        "name": "Shadows",
+        "name": "阴影",
         "path": "shadows"
       },
       {
-        "name": "Breakpoints",
+        "name": "断点",
         "path": "breakpoints"
       },
       {
@@ -207,35 +207,35 @@
         "path": "body-classes"
       },
       {
-        "name": "Visibility",
+        "name": "可见性",
         "path": "visibility"
       },
       {
-        "name": "Positioning",
+        "name": "定位",
         "path": "positioning"
       },
       {
-        "name": "Sass/SCSS Variables",
+        "name": "Sass/SCSS 变量",
         "path": "sass-scss-variables"
       },
       {
-        "name": "Other Helper Classes",
+        "name": "其他的css辅助类",
         "path": "other-helper-classes"
       }
     ]
   },
   {
-    "name": "Layout and Grid",
+    "name": "布局和网格",
     "icon": "view_quilt",
     "path": "layout",
     "children": [
       {
-        "name": "Flex Grid",
+        "name": "Flex 网格",
         "path": "grid",
         "opened": true,
         "children": [
           {
-            "name": "Introduction to Flexbox",
+            "name": "Flexbox介绍",
             "path": "introduction-to-flexbox"
           },
           {
@@ -261,32 +261,32 @@
         ]
       },
       {
-        "name": "Layout",
+        "name": "布局",
         "path": "layout"
       },
       {
-        "name": "Routing with Layouts and Pages",
+        "name": "布局和页面搭配路由",
         "path": "routing-with-layouts-and-pages"
       },
       {
-        "name": "Layout Header and Footer",
+        "name": "页眉和页脚",
         "path": "header-and-footer"
       },
       {
-        "name": "Layout Drawer",
+        "name": "抽屉",
         "path": "drawer"
       },
       {
-        "name": "Layout Page",
+        "name": "页面",
         "path": "page"
       },
       {
-        "name": "Layout Builder",
+        "name": "布局生成器",
         "external": true,
         "path": "/layout-builder"
       },
       {
-        "name": "Layout Gallery",
+        "name": "布局示例",
         "path": "gallery"
       },
       {
@@ -294,175 +294,175 @@
         "path": "page-sticky"
       },
       {
-        "name": "Page Scroller",
+        "name": "页面滚动条",
         "path": "page-scroller"
       }
     ]
   },
   {
-    "name": "Vue Components",
+    "name": "Vue 组件",
     "icon": "widgets",
     "path": "vue-components",
     "children": [
       {
-        "name": "Ajax Bar",
+        "name": "Ajax Bar Ajax进度栏",
         "path": "ajax-bar"
       },
       {
-        "name": "Avatar",
+        "name": "Avatar 头像",
         "path": "avatar"
       },
       {
-        "name": "Badge",
+        "name": "Badge 徽标",
         "path": "badge"
       },
       {
-        "name": "Banner",
+        "name": "Banner 横幅",
         "path": "banner"
       },
       {
-        "name": "Bar",
+        "name": "Bar 顶部栏",
         "path": "bar"
       },
       {
-        "name": "Breadcrumbs",
+        "name": "Breadcrumbs 面包屑",
         "path": "breadcrumbs"
       },
       {
-        "name": "Buttons",
+        "name": "Buttons 按钮",
         "listPath": "buttons",
         "children": [
           {
-            "name": "Button",
+            "name": "Button 按钮",
             "path": "button"
           },
           {
-            "name": "Button Group",
+            "name": "Button Group 按钮组合",
             "path": "button-group"
           },
           {
-            "name": "Button Dropdown",
+            "name": "Button Dropdown 下来按钮",
             "path": "button-dropdown"
           }
         ]
       },
       {
-        "name": "Card",
+        "name": "Card 卡片",
         "path": "card"
       },
       {
-        "name": "Carousel",
+        "name": "Carousel 幻灯片",
         "path": "carousel"
       },
       {
-        "name": "Chat Message",
+        "name": "Chat Message 聊天消息",
         "path": "chat"
       },
       {
-        "name": "Chip",
+        "name": "Chip 气泡",
         "path": "chip"
       },
       {
-        "name": "Circular Progress",
+        "name": "Circular Progress 环形进度",
         "path": "circular-progress"
       },
       {
-        "name": "Color Picker",
+        "name": "Color Picker 颜色选择器",
         "path": "color-picker"
       },
       {
-        "name": "Dialog",
+        "name": "Dialog 弹框",
         "path": "dialog"
       },
       {
-        "name": "Editor - WYSIWYG",
+        "name": "Editor - WYSIWYG 编辑器",
         "path": "editor"
       },
       {
-        "name": "Expansion Item",
+        "name": "Expansion Item 扩展项目",
         "path": "expansion-item"
       },
       {
-        "name": "Floating Action Button",
+        "name": "Floating Action Button 悬浮按钮",
         "path": "floating-action-button"
       },
       {
-        "name": "Form Components",
+        "name": "Form Components 表单组件",
         "opened": true,
         "listPath": "form-components",
         "children": [
           {
-            "name": "Input Textfield",
+            "name": "Input Textfield 文本输入框",
             "path": "input"
           },
           {
-            "name": "Select",
+            "name": "Select 选择框",
             "path": "select"
           },
           {
-            "name": "File picker",
+            "name": "File picker 文件选择器",
             "path": "file-picker"
           },
           {
-            "name": "Form",
+            "name": "Form 表单",
             "path": "form"
           },
           {
-            "name": "Field (wrapper)",
+            "name": "Field (wrapper) 字段",
             "path": "field"
           },
           {
-            "name": "Radio",
+            "name": "Radio 单选框",
             "path": "radio"
           },
           {
-            "name": "Checkbox",
+            "name": "Checkbox 复选框",
             "path": "checkbox"
           },
           {
-            "name": "Toggle",
+            "name": "Toggle 开关",
             "path": "toggle"
           },
           {
-            "name": "Button Toggle",
+            "name": "Button Toggle 按钮开关",
             "path": "button-toggle"
           },
           {
-            "name": "Option Group",
+            "name": "Option Group 选项组",
             "path": "option-group"
           },
           {
-            "name": "Slider",
+            "name": "Slider 滑块",
             "path": "slider"
           },
           {
-            "name": "Range",
+            "name": "Range 范围选择器",
             "path": "range"
           },
           {
-            "name": "Time Picker",
+            "name": "Time Picker 时间选择器",
             "path": "time"
           },
           {
-            "name": "Date Picker",
+            "name": "Date Picker 日期选择器",
             "path": "date"
           }
         ]
       },
       {
-        "name": "Icon",
+        "name": "Icon 图标",
         "path": "icon"
       },
       {
-        "name": "Img",
+        "name": "Img 图像",
         "path": "img"
       },
       {
-        "name": "Infinite Scroll",
+        "name": "Infinite Scroll 无限滚动",
         "path": "infinite-scroll"
       },
       {
-        "name": "Inner Loading",
+        "name": "Inner Loading 加载",
         "path": "inner-loading"
       },
       {
@@ -470,23 +470,23 @@
         "path": "intersection"
       },
       {
-        "name": "Knob",
+        "name": "Knob 旋钮",
         "path": "knob"
       },
       {
-        "name": "Linear Progress",
+        "name": "Linear Progress 线性进度",
         "path": "linear-progress"
       },
       {
-        "name": "List & List Items",
+        "name": "List & List Items 列表",
         "path": "list-and-list-items"
       },
       {
-        "name": "Markup Table",
+        "name": "Markup Table Markup表格",
         "path": "markup-table"
       },
       {
-        "name": "Menu",
+        "name": "Menu 菜单",
         "path": "menu"
       },
       {
@@ -494,127 +494,127 @@
         "path": "no-ssr"
       },
       {
-        "name": "Observers",
+        "name": "Observers 侦听器",
         "listPath": "observers",
         "children": [
           {
-            "name": "Resize Observer (for Element)",
+            "name": "Resize Observer 侦听元素的大小变化",
             "path": "resize-observer"
           },
           {
-            "name": "Scroll Observer",
+            "name": "Scroll Observer 侦听滚动",
             "path": "scroll-observer"
           }
         ]
       },
       {
-        "name": "Pagination",
+        "name": "Pagination 分页",
         "path": "pagination"
       },
       {
-        "name": "Parallax",
+        "name": "Parallax 视差",
         "path": "parallax"
       },
       {
-        "name": "Popup Edit",
+        "name": "Popup Edit 弹出编辑",
         "path": "popup-edit"
       },
       {
-        "name": "Popup Proxy",
+        "name": "Popup Proxy 弹出代理",
         "path": "popup-proxy"
       },
       {
-        "name": "Pull to refresh",
+        "name": "Pull to refresh 下拉刷新",
         "path": "pull-to-refresh"
       },
       {
-        "name": "Rating",
+        "name": "Rating 评分",
         "path": "rating"
       },
       {
-        "name": "Responsive",
+        "name": "Responsive 响应式",
         "path": "responsive"
       },
       {
-        "name": "Scroll Area",
+        "name": "Scroll Area 区域滚动",
         "path": "scroll-area"
       },
       {
-        "name": "Separator",
+        "name": "Separator 分割条",
         "path": "separator"
       },
       {
-        "name": "Skeleton",
+        "name": "Skeleton 骨架屏",
         "path": "skeleton"
       },
       {
-        "name": "Slide Item",
+        "name": "Slide Item 滑动项",
         "path": "slide-item"
       },
       {
-        "name": "Slide Transition",
+        "name": "Slide Transition 滑动过渡",
         "path": "slide-transition"
       },
       {
-        "name": "Space",
+        "name": "Space 留白",
         "path": "space"
       },
       {
-        "name": "Spinners",
+        "name": "Spinners 加载项",
         "path": "spinners"
       },
       {
-        "name": "Splitter",
+        "name": "Splitter ",
         "path": "splitter"
       },
       {
-        "name": "Stepper",
+        "name": "Stepper 步骤",
         "path": "stepper"
       },
       {
-        "name": "Table",
+        "name": "Table 表格",
         "path": "table"
       },
       {
-        "name": "Tabs",
+        "name": "Tabs 选项卡",
         "path": "tabs"
       },
       {
-        "name": "Tab Panels",
+        "name": "Tab Panels 选项面板",
         "path": "tab-panels"
       },
       {
-        "name": "Timeline",
+        "name": "Timeline 时间线",
         "path": "timeline"
       },
       {
-        "name": "Toolbar",
+        "name": "Toolbar 工具栏",
         "path": "toolbar"
       },
       {
-        "name": "Tooltip",
+        "name": "Tooltip 提示",
         "path": "tooltip"
       },
       {
-        "name": "Tree",
+        "name": "Tree 树",
         "path": "tree"
       },
       {
-        "name": "Uploader",
+        "name": "Uploader 上传",
         "path": "uploader"
       },
       {
-        "name": "Video",
+        "name": "Video 视屏",
         "path": "video"
       },
       {
-        "name": "Virtual Scroll",
+        "name": "Virtual Scroll 模拟滚动",
         "path": "virtual-scroll"
       }
     ]
   },
   {
-    "name": "Vue Directives",
+    "name": "Vue 指令",
     "icon": "swap_calls",
     "path": "vue-directives",
     "children": [
@@ -665,7 +665,7 @@
     ]
   },
   {
-    "name": "Quasar Plugins",
+    "name": "Quasar 插件",
     "icon": "extension",
     "path": "quasar-plugins",
     "children": [
@@ -743,7 +743,7 @@
     ]
   },
   {
-    "name": "Security",
+    "name": "安全",
     "icon": "security",
     "path": "security",
     "children": [
@@ -1620,22 +1620,18 @@
         "name": "Introduction",
         "path": "introduction"
       },
-
       {
         "name": "Installation / Upgrade notes",
         "path": "installation"
       },
-
       {
         "name": "Command list",
         "path": "command-list"
       },
-
       {
         "name": "App Icons List",
         "path": "app-icons-list"
       },
-
       {
         "name": "Profile files",
         "path": "profile-files"
