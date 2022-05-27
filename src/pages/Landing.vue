@@ -13,11 +13,11 @@ q-page.landing
         .landing__hero-row.q-gutter-sm.row.items-center
           q-btn(color="brand-primary" unelevated no-caps to="/introduction-to-quasar" label="为何选择Quasar?")
           q-btn(color="brand-primary" outline no-caps to="/start" label="Get Started")
-          q-btn(color="accent" unelevated no-caps to="/video-tutorials" label="视屏教程")
+          q-btn(color="accent" unelevated no-caps to="/video-tutorials" label="视频教程")
         .q-pb-lg.text-grey-6.landing__hero-quote.text-center
           | 本中文网站持续翻译中,信息来自：<a target="_blank" class="text-bold text-no-wrap" href="https://quasar.dev">英文官网</a>。
           | 如果想了解翻译进度，或者参与翻译，请访问 <a target="_blank" class="text-bold text-no-wrap" href="https://github.com/dongwa/quasar-docs-cn">仓库地址</a>。
-          | 另外，我的B站账号中有<a target="_blank" class="text-bold text-no-wrap" href="https://www.bilibili.com/video/BV1pA4y197Zc">quasar的视屏教程</a>欢迎观看👏
+          | 另外，我的B站账号中有<a target="_blank" class="text-bold text-no-wrap" href="https://www.bilibili.com/video/BV1pA4y197Zc">quasar的视频教程</a>欢迎观看👏
   section.landing__front.text-center
     div
       .row.justify-center
@@ -132,14 +132,27 @@ import IntroductionVideo from 'components/page-parts/introduction-to-quasar/Intr
 // import SurveyCountdown from '../components/SurveyCountdown.vue'
 
 import {
-  fabGithub, fabTwitter, fabFacebook, fasSuitcaseMedical,
-  fabApple, fabWindows, fabLinux, fabAndroid, fabChrome,
-  fabFirefox, fabEdge, fabSafari, fabGoogle
+  fabGithub,
+  fabTwitter,
+  fabFacebook,
+  fasSuitcaseMedical,
+  fabApple,
+  fabWindows,
+  fabLinux,
+  fabAndroid,
+  fabChrome,
+  fabFirefox,
+  fabEdge,
+  fabSafari,
+  fabGoogle
 } from '@quasar/extras/fontawesome-v6'
 
 import {
-  mdiChevronDown, mdiLaunch, mdiPost,
-  mdiChat, mdiForum
+  mdiChevronDown,
+  mdiLaunch,
+  mdiPost,
+  mdiChat,
+  mdiForum
 } from '@quasar/extras/mdi-v6'
 
 import { useDocStore } from 'assets/doc-store.js'
@@ -165,7 +178,7 @@ export default {
     $store.toc = []
 
     return {
-      year: (new Date()).getFullYear(),
+      year: new Date().getFullYear(),
       features,
 
       fabGithub,
