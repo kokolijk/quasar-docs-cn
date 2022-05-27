@@ -1,6 +1,6 @@
 export default [
   {
-    name: 'Chinese quasar-v2 tutorial',
+    name: 'quasar-v2 中文教程',
     desc:
       'Quasar introductory tutorial includes ts+vue3+quasar2+pinia (quasar 中文入门教程)',
     author: 'donglin',
