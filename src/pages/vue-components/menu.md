@@ -16,7 +16,7 @@ The QMenu component is a convenient way to show menus. Goes very well with [QLis
 
 <doc-api file="QMenu" />
 
-## Usage
+## Usage 用法
 
 The idea with QMenu is to place it inside your DOM element / component that you want to be the trigger as direct child. Don’t worry about QMenu content inheriting CSS from the container as the QMenu will be injected as a direct child of `<body>` through a Quasar Portal.
 
@@ -25,7 +25,7 @@ Don't forget to use the directive `v-close-popup` in your clickable menu items i
 Alternatively, you can use the QMenu's property `auto-close` or handle closing the menu yourself through its v-model.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QMenu/Basic" />
 

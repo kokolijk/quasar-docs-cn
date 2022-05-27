@@ -28,7 +28,7 @@ Works great along with [QTabPanels](/vue-components/tab-panels), a component whi
 
 <doc-api file="QRouteTab" />
 
-## Usage
+## Usage 用法
 
 ::: tip TIPS
 * QTabs can be scrolled horizontally when the width is longer than the container width. Adjust your browser accordingly to see this in action.
@@ -41,7 +41,7 @@ Works great along with [QTabPanels](/vue-components/tab-panels), a component whi
 QRouteTab won't and cannot work with the UMD version if you don't also install Vue Router.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QTabs/Basic" />
 

@@ -16,7 +16,7 @@ For advanced functionality like pagination, sorting, filtering, and many more, y
 
 <doc-api file="QMarkupTable" />
 
-## Usage
+## Usage 用法
 
 ::: warning
 Notice that the content of `QMarkupTable` reflects an accurate markup representation of a native HTML `<table>`, having a `<thead>` and `<tbody>` to wrap header and table body. This is required.

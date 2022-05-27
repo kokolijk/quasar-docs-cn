@@ -35,7 +35,7 @@ Keep an eye on your developer console for handy helpers on which components are 
 
 <q-btn push color="brand-primary" icon-right="launch" label="Layout Builder" href="/layout-builder" target="_blank" rel="noopener noreferrer" />
 
-## Usage
+## Usage 用法
 
 ::: warning Using margin CSS will break the layout
 QLayout depends on taking up the whole screen and so QPageContainer, QHeader, QFooter and QLayoutDrawer positions are managed by it (through the `view` prop). You **cannot** use *CSS margins* as a style neither on QLayout itself nor on any of the QLayout components mentioned above. However you can safely use *CSS padding*.

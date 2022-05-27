@@ -18,13 +18,13 @@ For handling date and/or time, also check out [Quasar Date Utils](/quasar-utils/
 
 <doc-api file="QDate" />
 
-## Usage
+## Usage 用法
 
 ::: warning
 Notice that the actual date(s) of the model are all in String format.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QDate/Basic" overflow />
 

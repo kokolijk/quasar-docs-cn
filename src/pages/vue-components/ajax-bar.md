@@ -9,7 +9,7 @@ related:
   - /quasar-cli-webpack/ajax-requests
 ---
 
-绝大多数移动应用和桌面应用都需要通过[Ajax call](https://en.wikipedia.org/wiki/Ajax_(programming))来与服务端进行通信。 
+绝大多数移动应用和桌面应用都需要通过[Ajax call](https://en.wikipedia.org/wiki/Ajax_(programming))来与服务端进行通信。
 由于通信过程可能需要花费部分时间，为了好的用户体验，你可以在一个请求开始时使用QAjaxBar组件来给予用户反馈。
 
 
@@ -23,14 +23,14 @@ QAjaxBar是一个用于自动展示Ajax请求进度的组件，当然也可以�
 
 <doc-api file="QAjaxBar" />
 
-## Usage
+## Usage 用法
 QAjaxBar组件默认会自动捕获Ajax调用，然后展示它的进度。(除非你禁止了它的自动捕获)。
 
 
 出于演示的目的，下面的示例是使用手动触发的方式。当你点击按钮的时候页面的底部会出现一个10px左右的进度条，当然他的大小和颜色都是可以自定义的，
 请查阅Api部分以帮助你了解它的所有属性。
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QAjaxBar/Basic" />
 

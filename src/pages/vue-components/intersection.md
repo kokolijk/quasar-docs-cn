@@ -21,7 +21,7 @@ Not all browsers support the Intersection Observer API. Most [modern browsers](h
 
 <doc-api file="QIntersection" />
 
-## Usage
+## Usage 用法
 
 ::: warning
 In most cases, it is required that you apply CSS to the QIntersection element so that it acts as a necessary filler when the inner content is not rendered. This will allow for a smooth scrolling experience, because otherwise the scroll will jump erratically.
@@ -37,7 +37,7 @@ If using the `transition` prop, it is required that the content be wrapped in on
 There are edge cases where the default viewport won't work. For instance, when your code is hosted in an iframe (like Codepen). This is where you need to use the `root` property. It allows you to define an alternative to the viewport as your root (through its DOM element). It is important to keep in mind that root needs to be an ancestor of the observed element.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QIntersection/Basic" scrollable no-edit />
 

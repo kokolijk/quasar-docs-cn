@@ -11,7 +11,7 @@ QAvatar（头像）组件创建了一个可伸缩的、可着色的元素，可�
 
 <doc-api file="QAvatar" />
 
-## Usage
+## Usage 用法
 
 ::: tip
 使用 `size` 属性来定义Avatar组件的长和宽。`font-size`属性可以设置Avatar组件内使用的文字的大小，同时也会作用到字母和图标上面。

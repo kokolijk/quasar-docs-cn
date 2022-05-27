@@ -20,7 +20,7 @@ Please also refer to the [QOptionGroup](/vue-components/option-group) on other p
 
 <doc-api file="QCheckbox" />
 
-## Usage
+## Usage 用法
 
 ### Standard
 

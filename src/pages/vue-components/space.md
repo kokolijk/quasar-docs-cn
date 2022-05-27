@@ -7,7 +7,7 @@ The purpose of QSpace (has no props) is to simply fill all available space insid
 
 As a sidenote, all Quasar components use flexbox. So what this means, for example (there are numerous examples, just mentioning one), is that you can use QSpace in a QToolbar.
 
-## Usage
+## Usage 用法
 These are only two examples so you can get a glimpse on how to use it.
 
 <doc-example title="Basic" file="QSpace/Basic" />

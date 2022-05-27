@@ -15,7 +15,7 @@ Try it out with a non-fixed footer for example. When user reaches bottom of scre
 ## QPageSticky API
 <doc-api file="QPageSticky" />
 
-## Usage
+## Usage 用法
 ::: tip
 Since QPageSticky needs a layout and QLayout by default manages the entire window, then for demoing purposes we are going to use containerized QLayouts. But remember that by no means you are required to use containerized QLayouts for QPageSticky.
 :::
@@ -25,7 +25,7 @@ Since QPageSticky needs a layout and QLayout by default manages the entire windo
 * QPageSticky must be the last child element within its parent, so it can display on top of other content
 :::
 
-### Basic
+### Basic 基础
 In the example below, click on the menu buttons to show/hide Drawers, scroll the inner page, and resize the browser window so that the enclosing QLayout hits the Drawer's 700px and 500px breakpoints.
 
 <doc-example title="Basic" file="QPageSticky/Basic" />

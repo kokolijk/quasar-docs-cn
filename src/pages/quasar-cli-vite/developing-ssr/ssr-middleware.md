@@ -146,7 +146,7 @@ serve.error():
 * Description: Displays a wealth of useful debug information (including the stack trace).
 * It's available only in development and **NOT in production**.
 
-## Usage of SSR middleware
+## Usage 用法 of SSR middleware
 
 The first step is always to generate a new SSR middleware file using Quasar CLI:
 

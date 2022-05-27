@@ -18,11 +18,11 @@ For handling date and/or time, also check out [Quasar Date Utils](/quasar-utils/
 
 <doc-api file="QTime" />
 
-## Usage
+## Usage 用法
 
 Notice that the model is a String only.
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QTime/Basic" overflow />
 

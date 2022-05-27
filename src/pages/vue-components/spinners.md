@@ -25,7 +25,7 @@ The API below applies to all spinners, except for QSpinner. Making an example wi
 
 <doc-api file="QSpinnerCube" />
 
-## Usage
+## Usage 用法
 
 <doc-example title="QSpinner" file="QSpinner/Default" />
 

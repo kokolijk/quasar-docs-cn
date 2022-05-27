@@ -7,7 +7,7 @@ related:
 
 The build system uses [Vite](https://vitejs.dev) to create the UI of your website/app (`/src` folder). Don't worry if you aren't acquainted with Vite. Out of the box, you won't need to configure it because it already has everything set up.
 
-## Usage with quasar.config.js
+## Usage 用法 with quasar.config.js
 
 For cases where you need to tweak the default Vite config you can do so by editing `/quasar.config.js` and configuring `build > extendViteConf (viteConf)` method.
 

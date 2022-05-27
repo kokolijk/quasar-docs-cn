@@ -17,7 +17,7 @@ Quasar supplies a `$q` object that you can use for various purposes. You will no
 | `$q.cordova` | Object | Reference to Cordova global object. Available only when running under a Cordova app. |
 | `$q.capacitor` | Object | Reference to Capacitor global object. Available only when running under a Capacitor app. |
 
-## Usage
+## Usage 用法
 
 The following sections will teach you how to use it in .vue files (with both Composition API and Options API) and outside of them.
 

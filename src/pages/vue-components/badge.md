@@ -10,7 +10,7 @@ QBadge（徽标）组件用于创建一个小徽标来添加一些引人注目�
 
 <doc-api file="QBadge" />
 
-## Usage
+## Usage 用法
 
 <doc-example title="Basic" file="QBadge/Basic" />
 

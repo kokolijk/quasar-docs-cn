@@ -25,7 +25,7 @@ build: {
 
 More info: [css.modules](https://vitejs.dev/config/#css-modules), [css.postcss](https://vitejs.dev/config/#css-postcss), [css.preprocessorOptions](https://vitejs.dev/config/#css-preprocessoroptions).
 
-## Usage
+## Usage 用法
 Your Vue files can contain Sass/SCSS code through the `<style>` tag.
 
 ```html

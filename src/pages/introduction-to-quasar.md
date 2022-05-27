@@ -1,45 +1,46 @@
 ---
-title: Why Quasar?
+title: 为什么要选择Quasar?
 desc: What Quasar is and how it can considerably reduce your development time and costs.
 components:
   - introduction-to-quasar/IntroductionVideo
 ---
 
-Because it saves development costs drastically. Only Quasar can do:
+因为它大大节省了开发成本，只有Quasar可以做到在30分钟内同时构建出响应式网站，手机app和桌面应用：
 
 <introduction-video />
 
-Also because:
+也因为:
 
-* It's based on Vue.js
-* You get a state-of-the-art UI (that follows Material Guidelines) for your **websites** and **apps** out of the box
-* Best support for desktop and **mobile browsers** (including iOS Safari!) out of the box
-* Best-in-class support for each build mode (SPA, SSR, PWA, Mobile app, Desktop app & Browser Extension) and the best developer experience through a tight integration with our own CLI
-* It's easily customizable (CSS) and extendable (JS)
-* It's the most performance-focused framework
-* It's tree-shakable automatically
-* Incredible community on our Forum and Discord chat
-* Has a regular release cycle inclusive of new features
-* Gets quick fixes and listens to the community's requests
-* Handles the whole development experience (including even creating your app's icons and splash screens)
+* 基于Vue.js
+* 为您的**网站**和**应用程序**提供高水准的UI（遵循质感设计 Material Design）
+* 对桌面和移动浏览器(包括iOS Safari!)的最佳支持！
+* 一流的跨端开发体验，支持单页应用, SSR, PWA, 手机app, 桌面应用 和 浏览器插件
+* 它很容易定制(CSS)和扩展(JS)
+* 它是最注重性能的框架
+* 它可以自动tree-shakable(在打包生产环境的版本中自动删除无用的代码)
+* 活跃的社区和论坛
+* 定期更新，及时修复社区反馈的bug，倾听社区的需求
+* 事无巨细的帮助你处理整个开发流程(甚至包括创建应用程序的图标和启动动画)
 
-Worried about bloat? You shouldn't be. If you only want to build a website, Quasar will only build the code required for a website, with nothing else. Same goes for the other build modes.
+担心代码体积过大？不必担心，如果你只是想构建一个网站，那么Quasar只会打包关于构建网站的代码，而没有其他内容。同理，当你构建其他模式的时候也是一样。
 
-## What is Quasar?
-Quasar (pronounced `/ˈkweɪ.zɑɹ/`) is an MIT licensed open-source Vue.js based framework, which allows you as a web developer to quickly create responsive++ websites/apps in many flavours:
-* SPAs (Single Page App)
-* SSR (Server-side Rendered App) (+ optional PWA client takeover)
-* PWAs (Progressive Web App)
-* BEX (Browser Extension)
-* Mobile Apps (Android, iOS, …) through Cordova or Capacitor
-* Multi-platform Desktop Apps (using Electron)
 
-Quasar's motto is: **write code once and simultaneously deploy it** as a website, a Mobile App and/or an Electron App. Yes, one codebase for all of them, helping you develop an app in record time by using a state-of-the-art CLI and backed by best-practice, blazing fast Quasar web components.
+## 关于 Quasar
+Quasar (发音 `/ˈkweɪ.zɑɹ/`) 是一个基于Vue.js的开源框架，遵循MIT开源协议。它可以帮你快速构建多种模式的响应式网站和应用程序：
+* SPA (Single Page App，单页应用)
+* SSR (Server-side Rendered App，服务端渲染) (可与PWA同时存在)
+* PWA (渐进式web应用程序)
+* BEX (Browser Extension，浏览器插件)
+* 手机App (Android, iOS, …) 通过 Cordova 或者 Capacitor构建
+* 跨平台的桌面应用 (使用 Electron构建)
 
-When using Quasar, you won't need additional heavy libraries like Hammer.js, Moment.js or Bootstrap. It's got those needs covered internally, and all with a small footprint!
+Quasar的座右铭是：编写一次代码，同时将其部署为网站、手机应用程序和桌面应用程序。
 
-## What else you got?
-Because of the simplicity and power offered to you out of the box, Quasar, with its CLI, is packed full of features, all built to make your developer life easier.
+当使用Quasar时，你不需要额外的引入这些库，如Hammer.js, Moment.js或Bootstrap, Quasar内置了这些功能，而且代码体积很小
+
+## What-else-you-got?
+
+由于Quasar开箱即用的简单性和功能强大的脚手架，他们可以使你的编程体验更加轻松
 
 ::: tip Food for thought
 <br>
@@ -49,43 +50,51 @@ Quasar is looking into the future and sets its own high and modern standards. An
 *What we want to achieve with Quasar is to raise the bar for web development as a whole. Make it go forward, evolve. Change minds. Point out when there’s a better alternative.*
 :::
 
-Below is a non-exhaustive list of Quasar's great aspects and features.
+下面是Quasar的一个不详尽的功能列表
 
-#### All Platforms in One Go
-One authoritative source of code for all platforms, simultaneously: responsive desktop/mobile websites (SPA, SSR + SPA client takeover, SSR + PWA client takeover), PWAs (Progressive Web Apps), mobile apps (that look native) and multi-platform desktop apps (through Electron).
+#### 一套代码支持平台
+编写一次代码，同时将其部署为响应式网站(SPA, SSR + SPA 模式或者 SSR + PWA 模式), PWAs (Progressive Web Apps，渐进式web程序), 、手机应用程序（类似原生的）和跨平台的桌面应用程序（通过Electron）。
 
-#### The largest sets of top-class, fast and responsive web components
-There’s a component for almost every web development need within Quasar. Each of Quasar's components is carefully crafted to offer you the best possible experience for your users. Quasar is **designed with performance & responsiveness in mind** – so the overhead of using Quasar is barely noticeable. This attention to performance and good design is something that gives us special pride.
+#### 一流的组件库
 
-#### Best practices integrated by default
-Quasar was also built to encourage developers to follow web development best practices. To do this, Quasar is packed full of great features out of the box - **with no configuration needed**.
+Quasar内置了极其丰富的vue组件酷，几乎可以覆盖到任何web开发的需求场景。并且每一个Quasar的组件都是精心制作的，为用户提供最好的体验。Quasar在设计时十分注重**性能和响应性**，因此使用Quasar的性能开销几乎可以忽略不计。对性能和设计的关注是我们引以为傲的地方。
 
-#### App Extensions support
-Quasar App Extensions are a way to painlessly inject complicated (or simple) setups into your websites/apps. They're also a way for our big community to contribute and help you get up to speed even faster. **The patterns for development literally open the floodgates to making Quasar one of the most extensible and powerful frameworks out there** - limited only by your imagination and innovation.
+#### 默认情况下集成了最佳实践
+类星体的建立也是为了鼓励开发者遵循web开发的最佳实践。为了做到这一点，Quasar帮你做好了很多开箱即用的特性 - **无需额外配置**。
 
-#### Full RTL Support
-RTL (right to left) support for both Quasar components & the developer’s own code. Developer-written website/app CSS code gets automatically converted to RTL if an RTL language pack is used.
 
-#### Progressively migrate your existing project
-Quasar offers a UMD (Unified Module Definition) version, which means developers can add a CSS and JS HTML tag into their existing project and they’re ready to use it. No build step is required.
+#### 应用扩展支持
+Quasar应用扩展是一种将复杂（或简单）的功能轻松注入网站/应用程序的方法。这也是我们庞大的社区做出贡献的一种方式，可以帮助你更快地进步。这种模式终将会使Quasar成为扩展性最好的，最强大的框架---取决您的想象力和创新力。
 
-#### Focus on your features, not the boilerplating
-The top-class project initialization with Quasar CLI makes getting started very easy for you as a developer. You can turn your idea into reality in record time. In other words, Quasar does the heavy lifting for you, so you are free to focus on your features and not on boilerplate.
+#### 全面的RTL支持
+RTL（从右到左的布局）支持Quasar组件和开发人员自己的代码。如果打开RTL功能，开发人员编写的网站/应用程序CSS代码会自动转换为RTL（从右到左的布局）。
 
-#### Automated testing & audit
-Quasar projects have the ability to add Unit and End-to-End testing harnesses out of the box, as well as an ever-growing suite of product quality and security auditing tools. All this to ensure that your websites/apps have the highest quality possible.
+#### 渐进式迁移到现有的项目
+Quasar提供UMD（统一模块定义）版本，这意味着开发人员可以将CSS和JS HTML标签添加到现有项目中，并准备好使用它。不需要构建步骤。
 
-#### Awesome ever-growing community
-When developers encounter a problem they can’t solve, they can visit the Quasar [forum](https://forum.quasar.dev/) or our [Discord chat server](https://chat.quasar.dev). The community is always there to help you. You can also get updates on new versions and features by following us on [Twitter](https://twitter.quasar.dev). You can also get special service as a [backer/sponsor](https://donate.quasar.dev) and help make sure Quasar stays relevant for you in the future too!
+#### 自由地专注于你的程序，而不是繁琐的配置。
 
-#### A wide range of platform support
+Quasar CLI为您初始化的代码模版使你很容易成为一个开发人员。你可以在极短的时间内把你的想法变成现实。换句话说，类星体为你做了繁重的工作，所以你可以自由地专注于实现你的需求，而不是一些琐事。
+
+#### 自动化测试和审查
+Quasar项目能够开箱即用地添加单元和端对端测试套件，以及不断进步的产品质量和安全审计工具。 所有这些都是为了确保你的网站/应用程序具有最高质量。
+
+#### 不断壮大的社区
+
+当开发人员遇到无法解决的问题时，他们可以访问[Quasar论坛](https://forum.quasar.dev/)或我们的 [Discord聊天服务器](https://chat.quasar.dev)。 社区随时为您提供帮助。 您还可以通过[Twitter](https://twitter.quasar.dev)关注我们获取有关新版本和功能的更新。 您还可以作为[支持者/赞助商](https://donate.quasar.dev)获得专门的服务，并确保Quasar在未来与您保持联系！
+
+#### 广泛的平台兼容性
+
 Google Chrome, Firefox, Edge, Safari, Opera, iOS, Android, MacOS, Linux, Windows.
 
-#### Quasar Language Packs
-Quasar comes equipped with over 40 language packs out of the box. On top of that, if your language pack is missing, it takes just 5 minutes to add it.
+#### Quasar 语言包
 
-#### Great documentation
-And finally, it’s worth mentioning the significant amount of time taken to write great, bloat-free, focused and complete documentation so that developers can quickly pick up Quasar. We put special effort into our documentation to make sure there is no confusion.
+Quasar配备了40多种开箱即用的语言包。 最重要的是，如果缺少您的语言包，则只需5分钟即可添加。
 
-## Get started in under a minute
-Having said this, let's [get started](/start)! You'll be running a website or app in under a minute.
+#### 出色的文档
+
+最后，值得一提的是，为了让开发人员能够快速掌握Quasar，我们花费了大量的时间来编写优秀、简洁、集中和完整的文档。我们在我们的文档中付出了特别的努力，以确保没有混淆。
+
+## 快速开始
+
+说到这里，让我们[get started](/start)!!您将在一分钟内运行起一个网站或应用程序。

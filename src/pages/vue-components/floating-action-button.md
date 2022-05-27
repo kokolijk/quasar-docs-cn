@@ -19,7 +19,7 @@ Note that you don’t need a QLayout to use FABs.
 
 <doc-api file="QFabAction" />
 
-## Usage
+## Usage 用法
 There are two types of FABs: expandable (has sub-actions) and non-expandable.
 
 ::: tip

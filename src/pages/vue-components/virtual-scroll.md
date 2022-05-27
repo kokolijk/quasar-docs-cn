@@ -15,7 +15,7 @@ There are currently two types of QVirtualScroll: "list" (using QItems) and "tabl
 
 <doc-api file="QVirtualScroll" />
 
-## Usage
+## Usage 用法
 
 ::: tip
 * (Composition API) To get the best performance while using large lists, do not wrap the array that you are passing in the `items` prop with ref()/computed()/reactive()/etc. This allows Vue to skip making the list "responsive" to changes.
@@ -30,7 +30,7 @@ There is a maximum height of the scrolling container, imposed by each browser. I
 
 Scroll the examples below to see QVirtualScroll in action.
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QVirtualScroll/Basic" />
 

@@ -11,7 +11,7 @@ QScrollObserver is a Quasar component that emits a `scroll` event whenever the u
 
 <doc-api file="QScrollObserver" />
 
-## Usage
+## Usage 用法
 Scroll this page to see the example below in action.
 
 <doc-example title="Basic" file="QScrollObserver/Basic" />

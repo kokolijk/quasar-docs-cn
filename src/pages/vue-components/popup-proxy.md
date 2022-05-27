@@ -14,7 +14,7 @@ QPopupProxy should be used when you need either a [QMenu](/vue-components/menu) 
 
 <doc-api file="QPopupProxy" />
 
-## Usage
+## Usage 用法
 ::: tip
 Use your browsers development tools to toggle the device between mobile or desktop (with browser refresh after each change) or, physically resize your browser's window to watch the QPopupProxy component switch between either a QMenu or a QDialog before clicking/tapping on its container. The default breakpoint is set at 450px.
 :::

@@ -17,7 +17,7 @@ We will be describing `v-touch-hold` directive on the lines below.
 
 <doc-api file="TouchHold" />
 
-## Usage
+## Usage 用法
 
 <doc-example title="Basic" file="TouchHold/Basic" />
 

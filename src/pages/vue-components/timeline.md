@@ -17,9 +17,9 @@ QTimeline has 3 layouts:
 ## QTimelineEntry API
 <doc-api file="QTimelineEntry" />
 
-## Usage
+## Usage 用法
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QTimeline/Basic" scrollable />
 

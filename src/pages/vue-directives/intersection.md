@@ -21,7 +21,7 @@ Not all browsers support the Intersection Observer API. Most [modern browsers](h
 
 <doc-api file="Intersection" />
 
-## Usage
+## Usage 用法
 
 Reading the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) first will be best in your understanding of how this directive works.
 
@@ -48,7 +48,7 @@ The handler Function takes one parameter, which is an [IntersectionObserverEntry
 Scroll within the examples below until the observed element is in view. Then scroll it out of view.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="Intersection/Basic" no-edit />
 

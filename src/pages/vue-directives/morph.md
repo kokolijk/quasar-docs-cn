@@ -14,7 +14,7 @@ Under the hood, it uses the Quasar [Morph function util](/quasar-utils/morph-uti
 
 <doc-api file="Morph" />
 
-## Usage
+## Usage 用法
 
 Reading the [Morph function util](/quasar-utils/morph-utils) first will be best in your understanding of how this directive works.
 

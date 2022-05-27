@@ -1,6 +1,6 @@
 <template lang="pug">
 q-page.landing
-  h1.landing__title Quasar Framework
+  h1.landing__title Quasar Framework 中文网站
   section.landing__hero.flex.flex-center
     .row.items-center.justify-center.landing__hero-inner
       .landing__hero-logo.col-12.flex.flex-center.q-mb-lg
@@ -8,13 +8,16 @@ q-page.landing
       .landing__hero-text.col-12.column.items-center
         //- .text-h4.landing__hero-text-main.text-bold.text-brand-primary.q-pb-xs QUASAR FRAMEWORK
         .q-pb-lg.text-grey-6.landing__hero-quote.text-center
-          | Effortlessly build high-performance & high-quality
-          | <span class="text-bold text-no-wrap">Vue.js 3</span> user interfaces in record time
+          | 帮助您在短时间内快速构建高性能，高质量的
+          | <span class="text-bold text-no-wrap">Vue.js 3</span> 应用程序
         .landing__hero-row.q-gutter-sm.row.items-center
-          q-btn(color="brand-primary" unelevated no-caps to="/introduction-to-quasar" label="Why Quasar?")
+          q-btn(color="brand-primary" unelevated no-caps to="/introduction-to-quasar" label="为何选择Quasar?")
           q-btn(color="brand-primary" outline no-caps to="/start" label="Get Started")
-          q-btn(color="accent" unelevated no-caps to="/video-tutorials" label="Video Tutorials")
-
+          q-btn(color="accent" unelevated no-caps to="/video-tutorials" label="视屏教程")
+        .q-pb-lg.text-grey-6.landing__hero-quote.text-center
+          | 本中文网站持续翻译中,信息来自：<a target="_blank" class="text-bold text-no-wrap" href="https://quasar.dev">英文官网</a>。
+          | 如果想了解翻译进度，或者参与翻译，请访问 <a target="_blank" class="text-bold text-no-wrap" href="https://github.com/dongwa/quasar-docs-cn">仓库地址</a>。
+          | 另外，我的B站账号中有<a target="_blank" class="text-bold text-no-wrap" href="https://www.bilibili.com/video/BV1pA4y197Zc">quasar的视屏教程</a>欢迎观看👏
   section.landing__front.text-center
     div
       .row.justify-center
@@ -22,13 +25,13 @@ q-page.landing
 
   section.bg-white.text-grey-10.text-center
     div
-      .text-h4.q-mb-xl Our Premium Sponsors
+      .text-h4.q-mb-xl 我们的高级赞助商
       sponsor-list
 
   section.bg-white.text-grey-10.text-center.row.justify-center
     .landing__features.row
       .col-12.text-center
-        h4 All Platforms in One Go
+        h4 一套代码支持全平台
       .col-12.text-center.q-my-xl
         .landing__features-icons.q-gutter-lg
           q-icon(:name="fabApple")
@@ -40,7 +43,7 @@ q-page.landing
           q-icon(:name="fabEdge")
           q-icon(:name="fabSafari")
       .col-12.text-center.q-my-xl
-        p Combine the power of Quasar UI with Quasar CLI. One source code for all platforms simultaneously with all the latest and greatest best practices out of the box. Focus only on your app's features and forget about the boilerplate around it.
+        p 使用官网脚手架@quasar/cli创建的quasar项目可以一套源代码编译成所有平台的应用程序，并提供最新和最好的最佳实践。你只需关注你的应用功能本身，忘记跨端带来的烦恼。
       .col-12.row.justify-center
         q-card.bg-grey-1.q-px-lg.q-py-sm(bordered flat)
           q-card-section(horizontal)
@@ -58,7 +61,7 @@ q-page.landing
         h4 Impressive User Interface Building Blocks
       .col-12.row
         .col-12.col-md-8.landing__features-section.row.text-left
-          .col-12.text-left.text-subtitle1.text-bold.q-mt-lg.q-mb-md.q-mx-xs Components
+          .col-12.text-left.text-subtitle1.text-bold.q-mt-lg.q-mb-md.q-mx-xs Vue组件
           router-link.landing__features-link.col-6.col-sm-4(
             v-for="dir in features.comps"
             :key="dir.name"
@@ -66,7 +69,7 @@ q-page.landing
           ) {{ dir.name }}
 
         .col-6.col-sm-4.col-md-2.landing__features-section.column.text-left
-          .text-left.text-subtitle1.text-bold.q-mt-lg.q-mb-md.q-mx-xs Directives
+          .text-left.text-subtitle1.text-bold.q-mt-lg.q-mb-md.q-mx-xs 指令
           router-link.landing__features-link(
             v-for="dir in features.dirs"
             :key="dir.name"
@@ -74,7 +77,7 @@ q-page.landing
           ) {{ dir.name }}
 
         .col-6.col-sm-4.col-md-2.landing__features-section.column.text-left
-          .text-left.text-subtitle1.text-bold.q-mt-lg.q-mb-md.q-mx-xs Plugins
+          .text-left.text-subtitle1.text-bold.q-mt-lg.q-mb-md.q-mx-xs 插件
           router-link.landing__features-link(
             v-for="dir in features.plugins"
             :key="dir.name"

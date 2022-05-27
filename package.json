@@ -10,17 +10,18 @@
     "dev:ssr": "quasar dev -m ssr",
     "build": "node build/search/index.js && cp node_modules/quasar/dist/api/* public/quasar-api/ && quasar build -m ssr",
     "lint": "eslint --ext .js,.vue ./ --fix",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "start": "cd ./dist/quasar.dev && npm i && npm run start"
   },
   "dependencies": {
-    "@quasar/extras": "^1.12.4",
+    "@quasar/extras": "^1.14.0",
     "prismjs": "^1.26.0",
-    "quasar": "^2.6.2",
+    "quasar": "^2.7.1",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0"
   },
   "devDependencies": {
-    "@quasar/app-vite": "^1.0.0-beta.9",
+    "@quasar/app-vite": "^1.0.1",
     "autoprefixer": "^10.4.2",
     "eslint": "^8.10.0",
     "eslint-config-standard": "^17.0.0-1",

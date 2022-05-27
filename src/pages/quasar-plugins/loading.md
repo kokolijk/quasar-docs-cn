@@ -21,7 +21,7 @@ Loading is a feature that you can use to display an overlay with a spinner on to
 
 <doc-installation plugins="Loading" config="loading" />
 
-## Usage
+## Usage 用法
 Loading uses a delay (500ms) to display itself so that quick operations won't make the screen flicker. This happens by showing and then quickly hiding the progress spinner without the user having a chance to see what happens. The delay before showing it eliminates confusion.
 
 Inside a Vue component:

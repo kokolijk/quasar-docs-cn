@@ -16,7 +16,7 @@ If all you want is an input file, you might want to consider using [QFile](/vue-
 
 <doc-api file="QUploader" />
 
-## Usage
+## Usage 用法
 
 ::: warning
 QUploader requires a back-end server to receive the files. The examples below will not actually upload.
@@ -307,7 +307,7 @@ route("/") do
 end
 
 route("/upload", method = POST) do
-  if infilespayload(:img)                 # :img is file-name 
+  if infilespayload(:img)                 # :img is file-name
     @info filename(filespayload(:img))    # file-name="img"
     @info filespayload(:img).data
 

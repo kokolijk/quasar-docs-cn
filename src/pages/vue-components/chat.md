@@ -14,7 +14,7 @@ To mix messages with avatar and without avatar in the same thread, use a placeho
 
 <doc-api file="QChatMessage" />
 
-## Usage
+## Usage 用法
 
 ### The basics
 

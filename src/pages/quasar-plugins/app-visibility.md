@@ -13,7 +13,7 @@ Quasar makes use of the Web [Page Visibility API](https://developer.mozilla.org/
 
 <doc-installation plugins="AppVisibility" scrollable />
 
-## Usage
+## Usage 用法
 
 ```js
 // outside of a Vue file

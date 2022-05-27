@@ -19,7 +19,7 @@ Scaffold your layout(s) by clicking on the button below.
 
 <q-btn push color="brand-primary" icon-right="launch" label="Layout Builder" href="/layout-builder" target="_blank" rel="noopener noreferrer" />
 
-## Usage
+## Usage 用法
 
 A QPage must be encapsulated by QPageContainer, which in turn must be a child of QLayout.
 

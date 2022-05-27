@@ -17,7 +17,7 @@ Please note that the behavior is different depending on the platform the code is
 ## Installation
 <doc-installation plugins="AppFullscreen" />
 
-## Usage
+## Usage 用法
 ::: tip
 For an exhaustive list of properties and methods, please check out the API section.
 :::

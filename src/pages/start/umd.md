@@ -79,7 +79,7 @@ app.use(Quasar, {
 })
 ```
 
-## Usage
+## Usage 用法
 So, after you figured out the CDN links that you need to embed into your webpages, now it's time to use Quasar.
 
 ::: tip

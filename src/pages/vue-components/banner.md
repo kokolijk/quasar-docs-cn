@@ -3,15 +3,15 @@ title: Banner
 desc: The QBanner Vue component displays a prominent message and related optional actions.
 keys: QBanner
 ---
-The QBanner component creates a banner element to display a prominent message and related optional actions.
+QBanner组件创建一个banner元素用于展示一些醒目的信息和一些可选的按钮。
 
-According to the Material Design spec, the banner should be "displayed at the top of the screen, below a top app bar" - but of course you can put one anywhere that makes sense, even in a QDialog.
+根据Material Design的设计规范，banner应该显示在应用程序的顶部，当然你可以把它放在任何有意义的地方，甚至是QDialog组件中。
 
 ## QBanner API
 
 <doc-api file="QBanner" />
 
-## Usage
+## Usage 用法
 
 <doc-example title="Basic" file="QBanner/Basic" />
 

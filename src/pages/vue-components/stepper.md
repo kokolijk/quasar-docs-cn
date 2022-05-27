@@ -28,7 +28,7 @@ To use global navigation, you must add it to the `QStepper` 'navigation' slot.
 
 <doc-api file="QStepperNavigation" />
 
-## Usage
+## Usage 用法
 
 ::: tip
 If the QStep content also has images and you want to use swipe actions to navigate, you might want to add `draggable="false"` to them, otherwise the native browser behavior might interfere in a negative way.

@@ -19,7 +19,7 @@ Scaffold your layout(s) by clicking on the button below.
 
 <q-btn push color="brand-primary" icon-right="launch" label="Layout Builder" href="/layout-builder" target="_blank" rel="noopener noreferrer" />
 
-## Usage
+## Usage 用法
 ::: tip
 * Since QDrawer needs a layout and QLayout by default manages the entire window, then for demoing purposes we are going to use containerized QLayouts. But remember that by no means you are required to use containerized QLayouts for QDrawer.
 * If the QDrawer content also has images and you want to use touch actions to close it, you might want to add `draggable="false"` to them, otherwise the native browser behavior might interfere in a negative way.
@@ -33,7 +33,7 @@ By default, QDrawer has touch actions attached to it. If this interferes with yo
 When QDrawer is set into overlay mode, **it will force it to go into fixed position**, regardless if QLayout's "view" prop is configured with  "l/r" or "L/R". Also, **if on iOS platform and QLayout is containerized**, the fixed position will also be forced upon QDrawer due to platform limitations that cannot be overcome.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="QDrawer/Basic" />
 

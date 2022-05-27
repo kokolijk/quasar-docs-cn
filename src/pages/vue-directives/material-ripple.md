@@ -13,13 +13,13 @@ Do not use this directive on components that already have material ripples baked
 
 <doc-api file="Ripple" />
 
-## Usage
+## Usage 用法
 
 ::: warning
 Make sure that your DOM element or component has CSS `position: relative` or Quasar CSS helper class `relative-position` attached to it.
 :::
 
-### Basic
+### Basic 基础
 
 <doc-example title="Basic" file="Ripple/Basic" />
 

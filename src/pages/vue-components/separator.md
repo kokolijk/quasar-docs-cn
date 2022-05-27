@@ -10,7 +10,7 @@ The QSeparator component is used to separate sections of text, other components,
 
 <doc-api file="QSeparator" />
 
-## Usage
+## Usage 用法
 Take the following just as examples. Doesn't mean you can use QSeparator only on QCard, QList or QToolbar.
 
 <doc-example title="Horizontal" file="QSeparator/Horizontal" />

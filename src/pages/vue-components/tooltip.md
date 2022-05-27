@@ -13,7 +13,7 @@ The QTooltip component is to be used when you want to offer the user more inform
 
 <doc-api file="QTooltip" />
 
-## Usage
+## Usage 用法
 The idea with QTooltip is to place it inside your DOM element / component that you want to be the trigger as direct child. Don’t worry about QTooltip content inheriting CSS from the container as the QTooltip will be injected as a direct child of `<body>` through a Quasar Portal.
 
 <doc-example title="Basic" file="QTooltip/Basic" />

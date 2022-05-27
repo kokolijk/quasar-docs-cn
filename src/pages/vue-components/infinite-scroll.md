@@ -15,7 +15,7 @@ The QInfiniteScroll component allows you to load new content as the user scrolls
 
 <doc-api file="QInfiniteScroll" />
 
-## Usage
+## Usage 用法
 
 ::: tip
 Infinite Scroll loads items in advance when less than `offset` (default = 500) pixels is left to be seen. If the content you fetch has height less than the scroll target container’s height on screen then Infinite Scroll will continue loading more content. So make sure you load enough content.
