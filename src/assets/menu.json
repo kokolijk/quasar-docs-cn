@@ -20,7 +20,7 @@
     "path": "api-explorer"
   },
   {
-    "name": "视屏教程",
+    "name": "视频教程",
     "icon": "ondemand_video",
     "path": "video-tutorials"
   },
@@ -115,7 +115,7 @@
     ]
   },
   {
-    "name": "Options & Helpers",
+    "name": "选项和辅助",
     "icon": "tune",
     "path": "options",
     "children": [
@@ -604,7 +604,7 @@
         "path": "uploader"
       },
       {
-        "name": "Video 视屏",
+        "name": "Video 视频",
         "path": "video"
       },
       {
