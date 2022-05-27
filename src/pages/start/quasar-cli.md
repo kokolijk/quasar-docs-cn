@@ -3,83 +3,66 @@ title: Quasar CLI
 desc: How to use the Quasar CLI, the premium developer experience for free.
 ---
 
-Quasar CLI is the pride of Quasar Framework. You can seamlessly build:
+Quasar CLI 我们引以为傲的脚手架，你可以通过它构建:
 
-* a SPA (Single Page Application/Website),
-* a SSR (Server-side Rendered App/Website),
-* a PWA (Progressive Web App),
-* a BEX (Browser Extensions),
-* a Mobile App (through Cordova),
-* an Electron App
+* SPA (Single Page App，单页应用)
+* SSR (Server-side Rendered App，服务端渲染) (可与PWA同时存在)
+* PWA (渐进式web应用程序)
+* BEX (Browser Extension，浏览器插件)
+* 手机App (Android, iOS, …) 通过 Cordova 或者 Capacitor构建
+* 跨平台的桌面应用 (使用 Electron构建)
 
-...within the same project folder, ensuring you are **following the best Quasar practices while everything will simply work out of the box**.
+## 安装
 
-## TL;DR
-
-::: tip Requirements:
-* Node 12+ for Quasar CLI with Webpack, Node 14+ for Quasar CLI with Vite.
-* Yarn v1 (strongly recommended) or NPM.
+::: tip 环境要求:
+* Webpack版本的 Quasar CLI需要 Node 12+ , vite版本的 Quasar CLI 需要 Node 14+。.
+* Yarn v1 (推荐) 或者 NPM.
 :::
 
 ```bash
 $ yarn global add @quasar/cli
-$ yarn create quasar
 
-# or:
+# 或者使用:
 
 $ npm i -g @quasar/cli
-$ npm init quasar
 ```
 
-Pick `Quasar CLI with Vite` if you want:
-* Faster dev server start
-* Faster hot updates
-* Faster build
-* Superior PWA, SSR and BEX Quasar modes (more features)
+如果你想有以下特性，请选择 `Quasar CLI with Vite`：
+* 更快的开发项目启动速度
+* 更快的热更新
+* 更快的打包
+* 更优越的PWA、SSR和BEX模式 (more features)
 
 <q-btn color="brand-primary" no-caps no-wrap push label="Go to User Interface Components" to="/vue-components" />
 
-## Installation / Project Scaffolding
+## 创建项目/目录结构
 
-::: tip Requirements:
-* Node 12+ for Quasar CLI with Webpack, Node 14+ for Quasar CLI with Vite.
-* Yarn v1 (strongly recommended) or NPM.
-:::
-
-1. Let's create a Quasar app:
+1. 让我们通过下面的命令创建项目:
 
     ```bash
     $ yarn create quasar
-    # or:
+    # 或者使用:
     $ npm init quasar
     ```
     <br>
 
-2. Pick the `App with Quasar CLI` option then `Quasar v2`.
+2. 输入命令后会进入命令行界面选择 `App with Quasar CLI` 选项，然后选择 `Quasar v2`.
 
-3. You will then be asked which Quasar App CLI you want. Do you prefer the Vite one or the Webpack one?
+3. 接下来会询问你要选择vite还是webpack版本?
 
-  ::: tip Tip: pick "Quasar CLI with Vite" if you want:
-  * Faster dev server start
-  * Faster hot updates
-  * Faster build
-  * Superior PWA, SSR and BEX Quasar modes (more features)
-  :::
+    ::: tip 如果你想有以下特性，请选择 `Quasar CLI with Vite`：
+    * 更快的开发项目启动速度
+    * 更快的热更新
+    * 更快的打包
+    * 更优越的PWA、SSR和BEX模式 (more features)
+    :::
 
-4. Answer the rest of the questions and you're almost done.
+4. 接下来命令行会继续提问你需要使用哪些模块，包括ts，eslint，axios等，跟随提示回答剩下的问题，就差不多完成了。
 
-5. Now, do you want to be able to run Quasar CLI commands directly (eg. `$ quasar dev/build`) or through yarn or npx (`$ yarn quasar dev/build` / `npx quasar dev/build`)?
-
-    We strongly recommend to pick the first choice and be able to run commands directly. Actually, you'll be able to do even more than just this (eg. "quasar upgrade" or "quasar serve" commands). For this, you'll need to globally install the `@quasar/cli` package:
-
-    ```bash
-    $ yarn global add @quasar/cli
-    # or
-    $ npm install -g @quasar/cli
-    ```
+5. 创建完成，并确保成功安装项目依赖后，你可以使用Quasar CLI提供的`quasar dev`命令来运行项目，使用`quasar build`来打包项目。也可以使用yarn或npx来启动/打包项目(`yarn quasar dev/build` / `npx quasar dev/build`)，但是更推荐使用第一种方式。
 
     ::: tip
-    If you are using Yarn, make sure that the Yarn [global install location](https://yarnpkg.com/lang/en/docs/cli/global/) is in your PATH:
+    如果你使用yarn，请确保已经添加了yarn到你电脑的环境变量的PATH中 [global install location](https://yarnpkg.com/lang/en/docs/cli/global/):
     <br><br>
 
     ```bash
@@ -90,7 +73,7 @@ Pick `Quasar CLI with Vite` if you want:
     set -U fish_user_paths (yarn global bin) $fish_user_paths
     ```
     <br>
-    Under Windows, modify user's PATH environment variable. If you are using yarn then add `%LOCALAPPDATA%\yarn\bin`, otherwise if you're using npm then add `%APPDATA%\npm`.
+     在Windows下，修改用户的PATH环境变量。如果你使用yarn，则添加`%LOCALAPPDATA%\yarn\bin`, 若使用npm 则添加 `%APPDATA%\npm`.
     :::
 
     ::: tip WSL2
@@ -99,20 +82,15 @@ Pick `Quasar CLI with Vite` if you want:
     When using WSL2 (Windows Subsystem for Linux) [Microsoft recommends](https://docs.microsoft.com/en-us/windows/wsl/compare-versions#performance-across-os-file-systems) keeping files in the linux file system to maximize performance. Projects will build around 3X slower and HMR (Hot Module Reload) will not work without a hack if the project files are on the Windows mount instead of the local linux file system. This is also true in Docker for Windows based development environments.
     :::
 
-## How Quasar CLI works
+## Quasar CLI是如何工作的
 
-Quasar CLI (`@quasar/cli`) works in tandem with either `@quasar/app-vite` or `@quasar/app-webpack`. The first one is optional (but **strongly recommended**) and allows you to run Quasar CLI commands directly and some other useful commands like `quasar upgrade` (upgrade Quasar packages seamlessly) or `quasar serve` (serve your distributable with an ad-hoc webserver). The second package is the heart of it (runs the important commands - dev, build, inspect, info, describe etc) and it gets installed locally into every Quasar project folder.
+Quasar CLI（`@Quasar/CLI`）与`@Quasar/app vite`或`@Quasar/app`协同工作。第一个是可选的（但强烈建议），允许您直接运行Quasar CLI命令和一些其他有用的命令，如Quasar upgrade（无缝升级Quasar包）或Quasar serve（通过ad-hoc webserver为您的可分发服务器提供服务）。第二个包是它的核心（运行重要的命令-dev、build、inspect、info、descripe等），它被本地安装到每个Quasar项目文件夹中。
 
-#### Running without the global `@quasar/cli`
+#### 在没有全局安装`@quasar/cli` 的情况下怎么运行
 
-However, should you want independence of the globally installed `@quasar/cli` package, you have the possibility to directly run the Quasar CLI commands. It is `@quasar/app-vite` or `@quasar/app-webpack` (which is specific to each project folder) that will run all the CLI commands.
+虽然你没有全局安装`@quasar/cli`，但是`@quasar/app-vite` 或者 `@quasar/app-webpack`其中的一个会被安装到你的项目依赖中去，所以你可以通过下面两种方式来运行Cli的命令：
 
-Here are the options:
-
-1. You can write npm scripts (in your `package.json`) to run Quasar commands.
-
-    Example of adding a few npm scripts into your `package.json`:
-
+1. 在你项目的`package.json`中添加启动脚本，例如:
     ```js
     // package.json
     "scripts": {
@@ -122,25 +100,25 @@ Here are the options:
     }
     ```
 
-    The above will allow you to run `$ yarn dev` or `$ yarn build` without the need of a globally installed `@quasar/cli`, should you wish to do so.
+    这样,你就可以通过 `yarn dev` 或者 `yarn build` 或者 `npm run dev`,`npm run build` 来启动/打包你的项目，没有全局安装`@quasar/cli`也没有关系。
 
-2. Alternatively, you can directly run the Quasar CLI commands through Yarn:
+2. 或者，你可以直接通过Yarn运行Quasar CLI命令，例如:
 
     ```bash
-    $ yarn quasar dev
-    $ yarn quasar inspect
+    yarn quasar dev
+    yarn quasar inspect
     # ..etc
     ```
     <br>
 
-3. Or use [npx](https://github.com/npm/npx):
+3. 或者使用 [npx](https://github.com/npm/npx):
 
     ```bash
-    $ npx quasar dev
-    $ yarn quasar inspect
+    npx quasar dev
+    npx quasar inspect
     # ..etc
     ```
 
 ## What next?
 
-<q-btn color="brand-primary" no-caps no-wrap push label="Go to User Interface Components" to="/vue-components" />
+<q-btn color="brand-primary" no-caps no-wrap push label="去看看vue组件" to="/vue-components" />
