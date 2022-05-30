@@ -1,41 +1,56 @@
 ![Quasar Framework logo](https://cdn.quasar.dev/logo-v2/header.png)
 
-## Quasar Framework Documentation
+# Quasar框架中文文档 ｜ Quasar中文翻译
 
-> Build high-performance VueJS user interfaces in record time: responsive Single Page Apps, SSR Apps, PWAs, Browser extensions, Hybrid Mobile Apps and Electron Apps. If you want, all using the same codebase!
+> 在短时间内构建高性能的vuejs应用程序,基于vuejs的开源前端框架，高性能，内置丰富的css和vue组件库，响应式支持，一套代码可以编译出SPA，PWA，SSR，手机应用和桌面应用
 
-[![Join the chat at https://discord.gg/5TDhbDg](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://discord.gg/5TDhbDg)
+**本仓库是由[我](https://github.com/dongwa)个人维护的quasar中文文档，信息来自：[英文官网](https://quasar.dev)。纯手工，非机器翻译，并且添加了一些个人经验，站点持续翻译中，如果对你有帮助麻烦给我的仓库点一个star✨，谢谢🙏，。
+如果你也想参与翻译，请fork本仓库然后向我提交PR。另外，我的B站账号中有[quasar的视频教程](https://www.bilibili.com/video/BV1pA4y197Zc)欢迎观看👏**
+<br>
+<hr>
+<br>
+<img src="https://img.shields.io/npm/v/quasar?label=quasar"> <img src="https://img.shields.io/npm/v/%40quasar/app?label=@quasar/app"> <img src="https://img.shields.io/npm/v/%40quasar/cli?label=@quasar/cli"> <img src="https://img.shields.io/npm/v/%40quasar/extras.svg?label=@quasar/extras"> <img src="https://img.shields.io/npm/v/%40quasar/icongenie.svg?label=@quasar/icongenie"> <img src="https://img.shields.io/npm/v/%40quasar/vite-plugin.svg?label=@quasar/vite-plugin">
+
+[![Join the chat at https://chat.quasar.dev](https://img.shields.io/badge/chat-on%20discord-7289da.svg)](https://chat.quasar.dev)
 <a href="https://forum.quasar.dev" target="_blank"><img src="https://img.shields.io/badge/community-forum-brightgreen.svg"></a>
 [![https://good-labs.github.io/greater-good-affirmation/assets/images/badge.svg](https://good-labs.github.io/greater-good-affirmation/assets/images/badge.svg)](https://good-labs.github.io/greater-good-affirmation)
 
-## Supporting Quasar
-Quasar Framework is an MIT-licensed open source project. Its ongoing development is made possible thanks to the support by these awesome [backers](https://github.com/rstoenescu/quasar-framework/blob/dev/backers.md).
+## 支持 Quasar
+ Quasar 框架是一个 MIT 许可的开源项目。它的持续发展得益于这些令人尊敬的[支持者](https://github.com/rstoenescu/quasar-framework/blob/dev/backers.md)的支持
 
-**Please read our manifest on [Why donations are important](https://quasar.dev/why-donate)**. If you'd like to become a donator, check out [Quasar Framework's Donator campaign](https://donate.quasar.dev).
+**请阅读我们关于 [为什么捐款很重要](https://quasar.dev/why-donate)**。如果你想成为一名捐赠者，请查看 [Quasar 框架的捐赠活动](https://donate.quasar.dev).
 
-## Quasar Roadmap
+## 帮助文档
 
-For our roadmap, please visit: [https://roadmap.quasar.dev](https://roadmap.quasar.dev)
+Quasar的官方网站: [https://quasar.dev](https://quasar.dev)
 
-## Documentation
+本仓库的中文文档[地址](https://quasar-docs-cn.vercel.app/)
 
-Head on to the Quasar Framework official website: [https://quasar.dev](https://quasar.dev)
+## Quasar 的进度和计划
 
-## Stay in Touch
+关于Quasar的进度和计划，请访问: https://roadmap.quasar.dev
 
-For latest releases and announcements, follow on Twitter: [@quasarframework](https://twitter.com/quasarframework)
+## 保持联系
 
-## Chat Support
+有关最新发布和公告，请关注 Twitter:[@quasarframework](https://twitter.com/quasarframework)
 
-Ask questions at the official community Discord server: [https://chat.quasar.dev](https://chat.quasar.dev)
+## 聊天支持
 
-## Community Forum
+请在官方社区 Discord 服务器上提问。[https://chat.quasar.dev](https://chat.quasar.dev)
 
-Head on to the official community forum: [https://forum.quasar.dev](https://forum.quasar.dev)
+## 社区论坛
 
-## Semver
-Quasar is following [Semantic Versioning 2.0](https://semver.org/).
+在官方社区论坛上提问：[https://forum.quasar.dev](https://forum.quasar.dev)
 
-## License
+## 贡献
 
-All assets included in this repository are exclusive property of their respective owners. Quasar does not take any credit in packages included here.
+在提出PR之前，请务必阅读 [贡献指南](./CONTRIBUTING.md)。如果您有与 Quasar 相关的项目/组件/工具，请将其与 pull 请求一起添加到 [策划的列表](https://github.com/quasarframework/quasar-awesome)！
+
+感谢所有已经[为 Quasar 作出贡献]的人(https://github.com/quasarframework/quasar/graphs/contributors)!
+
+## 语义
+Quasar 遵循[Semantic Versioning 2.0](https://semver.org/)。
+
+## 许可证
+
+[MIT 证可证](http://en.wikipedia.org/wiki/MIT_License)
