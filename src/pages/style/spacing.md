@@ -172,5 +172,5 @@ S - 大小
 | `no-margin` | 移除外边距 |
 | `no-padding` | 移除内边距 |
 
-## 视屏讲解
-[B站视屏讲解](https://www.bilibili.com/video/BV1pA4y197Zc?p=10)
+## 视频讲解
+[B站视频讲解](https://www.bilibili.com/video/BV1pA4y197Zc?p=10)
