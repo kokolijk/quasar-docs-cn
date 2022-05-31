@@ -1,8 +1,6 @@
 {
-  "[javascript]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   },
-  "[vue]": {
-    "editor.defaultFormatter": "numso.prettier-standard-vscode"
-  }
+  "editor.formatOnSave": false
 }
