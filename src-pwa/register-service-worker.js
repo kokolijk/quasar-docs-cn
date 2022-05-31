@@ -7,20 +7,20 @@ register(process.env.SERVICE_WORKER_FILE, {
     Notify.create({
       color: 'negative',
       icon: mdiCached,
-      message: 'Updated content is available. Please refresh the page.',
+      message: '检测到文档内容有更新，请刷新当前页面。',
       timeout: 0,
       multiLine: true,
       position: 'top',
       actions: [
         {
-          label: 'Refresh',
+          label: '刷新',
           color: 'yellow',
           handler: () => {
             window.location.reload()
           }
         },
         {
-          label: 'Dismiss',
+          label: '忽略',
           color: 'white',
           handler: () => {}
         }
