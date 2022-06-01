@@ -1,16 +1,16 @@
 ---
 title: SEO with Quasar
-desc: Managing the search engine optimizations in a Quasar app.
+desc: 如何在Quasar中进行搜索引擎优化。
 ---
 
-The term SEO refers to Search Engine Optimization. And Quasar covers this aspect too through the [Quasar Meta Plugin](/quasar-plugins/meta).
+术语SEO指的是搜索引擎优化（Search Engine Optimization）。Quasar也涵盖了这方面，通过[Quasar Meta Plugin](/quasar-plugins/meta)来帮助你进行搜索引擎优化
 
 ## Quasar Meta Plugin
 
-The [Quasar Meta Plugin](/quasar-plugins/meta) can dynamically change page title, manage `<meta>` tags, manage `<html>` and `<body>` DOM element attributes, add/remove/change `<style>` and `<script>` tags in the head of your document (useful for CDN stylesheets or for json-ld markup, for example), or manage `<noscript>` tags.
+[Quasar Meta Plugin](/quasar-plugins/meta)可以动态的改变页面的title，`<meta>`标签，`<html>`和`<body>`标签的属性。添加/删除/修改head标签中的`<style>` ， `<script>`和`<noscript>`。
 
-Take full advantage of this feature by using it with **Quasar CLI**, especially **for the SSR (Server-Side Rendering) builds**. It doesn't quite make sense to use it for SPA (Single Page Applications) since the meta information in this case will be added at run-time and not supplied directly by the webserver (as on SSR builds).
+充分利用此功能并与**Quasar CLI**结合起来，可以对 **SSR（服务器端渲染）** 应用的SEO有非常好的效果。但是将其用于SPA（单页应用程序）中没有太大意义，因为SPA的页面是运行时动态构建的，而不是由Web服务器直接提供。
 
 ::: tip
-This Quasar plugin has the most tight integration with Quasar and so it has the best performance against any other similar solution.
+Quasar插件与Quasar有最紧密的集成，所以它与任何其他类似的解决方案相比都是最优的。
 :::
