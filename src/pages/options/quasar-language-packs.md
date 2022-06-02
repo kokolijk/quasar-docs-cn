@@ -111,11 +111,13 @@ export default async () => {
 import { Quasar } from 'quasar'
 
 export default async () => {
-  const langIso = 'zh-CN' // ... some logic to determine it (use Cookies Plugin?)
+  const langIso = 'zh-CN' //  ... 这个语言应是动态获取的，例如使用Cookies Plugin?
 
   try {
+
+    /* 注意下面这行注释 */
     await import(
-      /* webpackInclude: /(de|en-US)\.js$/ */
+      /* webpackInclude: /(zh-CN|en-US)\.js$/ */
       'quasar/lang/' + langIso
     ).then(lang => {
       Quasar.lang.set(lang.default)
@@ -137,11 +139,12 @@ boot: [
 ```
 
 ::: warning Always constrain a dynamic import
-Notice the use of the [Webpack magic comment](https://webpack.js.org/api/module-methods/#magic-comments) - `webpackInclude`. Otherwise all the available language packs will be bundled, resulting in an increase in the compilation time and the bundle size. See [Caveat for dynamic imports](https://quasar.dev/quasar-cli/lazy-loading#Caveat-for-dynamic-imports)
+注意示例代码中的注释，这样可以防止webpack将所有的语言包都打包，增大代码体积，详情请看： [Webpack magic comment](https://webpack.js.org/api/module-methods/#magic-comments) - `webpackInclude`。 See [Caveat for dynamic imports](https://quasar.dev/quasar-cli/lazy-loading#Caveat-for-dynamic-imports)
 :::
 
-### Dynamical (SSR)
-When dealing with SSR, we can't use singleton objects because that would pollute sessions. As a result, as opposed to the dynamical example above (read it first!), you must also specify the `ssrContext` from your boot file:
+### 动态配置 (SSR模式)
+
+在处理SSR时，我们不能使用上面的单例对象，因为这会污染sessions。因此，与上面的非SSR模式动态示例相反，还必须从boot文件中指定ssrContext
 
 ```js
 // -- With @quasar/app-vite --
@@ -154,7 +157,7 @@ const langList = import.meta.glob('../../node_modules/quasar/lang/*.mjs')
 // or just a select few (example below with only DE and FR):
 // import.meta.glob('../../node_modules/quasar/lang/(de|fr).mjs')
 
-// ! NOTICE ssrContext param:
+// ! 注意这个 ssrContext 参数:
 export default async ({ ssrContext }) => {
   const langIso = 'de' // ... some logic to determine it (use Cookies Plugin?)
 
@@ -175,7 +178,7 @@ export default async ({ ssrContext }) => {
 
 import { Quasar } from 'quasar'
 
-// ! NOTICE ssrContext param:
+// ! 注意这个 ssrContext 参数:
 export default async ({ ssrContext }) => {
   const langIso = 'de' // ... some logic to determine it (use Cookies Plugin?)
 
@@ -194,8 +197,8 @@ export default async ({ ssrContext }) => {
 }
 ```
 
-## Change Quasar Language Pack at Runtime
-Example with a QSelect to dynamically change the Quasar components language:
+## 在运行时切换语言包
+下面是一个使用QSelect组件在运行时动态切换语言包的示例：
 
 ```html
 <template>
@@ -249,25 +252,26 @@ export default {
 </script>
 ```
 
-## Using Quasar Language Pack in App Space
-Although the Quasar Language Packs **are designed only for Quasar components internal usage**, you can still use their labels for your own website/app components too.
+## 在项目中使用Quasar语言包
+尽管Quasar语言包是为内置的Quasar组件设计的，但是你任仍然可以把他们用到你自己的项目代码中。
 
 ```html
-"Close" label in current Quasar Language Pack is:
+获取 "Close" 文案在当前的语言中为
 {{ $q.lang.label.close }}
 ```
 
-Check a Quasar Language Pack on [GitHub](https://github.com/quasarframework/quasar/tree/dev/ui/lang) to see the structure of `$q.lang`.
+在 [GitHub](https://github.com/quasarframework/quasar/tree/dev/ui/lang)页面查看`$q.lang`对象的结构.
 
-## Detecting Locale
-There's also a method to determine user locale which is supplied by Quasar out of the box:
+## 根据地区决定语言
+
+Quasar也提供了一个根据地区来获取语言的方法：
 
 ```js
-// outside of a Vue file
+// 在vue文件之外这样使用：
 import { Quasar } from 'quasar'
 Quasar.lang.getLocale() // returns a string
 
-// inside of a Vue file
+// 在vue文件中这样使用：
 import { useQuasar } from 'quasar'
 
 setup () {
