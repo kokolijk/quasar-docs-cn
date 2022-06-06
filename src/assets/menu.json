@@ -170,12 +170,12 @@
     ]
   },
   {
-    "name": "样式特性",
+    "name": "样式",
     "icon": "style",
     "path": "style",
     "children": [
       {
-        "name": "排版",
+        "name": "字体和排版",
         "path": "typography"
       },
       {
@@ -187,7 +187,7 @@
         "path": "theme-builder"
       },
       {
-        "name": "黑暗模式",
+        "name": "暗色模式",
         "path": "dark-mode"
       },
       {

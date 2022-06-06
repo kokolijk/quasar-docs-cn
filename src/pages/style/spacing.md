@@ -1,64 +1,53 @@
 ---
-title: CSS Spacing Classes
-desc: The list of CSS classes supplied by Quasar to simplify the specification of responsive paddings and margins.
+title: CSS间距类
+desc: Quasar提供的这些CSS工具类用于简化元素排版时的内外间距，并且是响应式的
 related:
   - /style/typography
   - /style/positioning
   - /style/visibility
   - /style/breakpoints
 ---
-There are CSS classes supplied by Quasar to help you with spacing for DOM elements or components. All options are
-prefixed with `q-` and then broken down into type (T), direction (D), and size (S). See the table below
-for all possible permutations.
 
-## Syntax
+Quasar提供了这些CSS工具类来帮你在页面布局时调整DOM之间的间距。
+这些CSS类名的命名规则是`q-TD-S`,其中`q-`是统一前缀，`T`是类型表示内/外边距，`D`是方向，`S`是大小，详情见下表
+
+## 语法
 ```
 q-[p|m][t|r|b|l|a|x|y]-[none|auto|xs|sm|md|lg|xl]
     T       D                   S
 
-T - type
-  - values: p (padding), m (margin)
+T - 类型
+  - 可取值: p , m。p表示padding（内边距），m表示margin（外边距）
 
-D - direction
-  - values:
-      t (top), r (right), b (bottom), l (left),
-      a (all), x (both left & right), y (both top & bottom)
+D - 方向
+  - 可取值:
+      t (top-上), r (right-右), b (bottom-下), l (left-左),
+      a (all-全部方向), x (水平方向即左和右), y (垂直方向即上和下)
 
-S - size
-  - values:
-      none,
-      auto (ONLY for specific margins: q-ml-*, q-mr-*, q-mx-*),
-      xs (extra small),
-      sm (small),
-      md (medium),
-      lg (large),
-      xl (extra large)
+S - 大小
+  - 可取值:
+      none (表示间距等于0)
+      auto (只能用于: q-ml-*, q-mr-*, q-mx-*),
+      xs (extra small-很小),
+      sm (small-小),
+      md (medium-中等),
+      lg (large-大),
+      xl (extra large-很大)
 ```
 
-## Examples
+## 示例
 
 ```html
-<!-- small padding in all directions -->
+<!--  在上下左右所有方向上都加一个大小为small的内边距 (padding)  -->
 <div class="q-pa-sm">...</div>
 
-<!-- medium margin to top, small margin to right -->
+<!-- 在上方加一个大小为medium的外边距 (margin),在右边加一个大小为 small的外边距 -->
 <q-card class="q-mt-md q-mr-sm">...</q-card>
 ```
 
-## Flex Addons
-When enabled (through `quasar.config.js > framework > cssAddon: true`) it provides breakpoint aware versions for all spacing related CSS classes.
+## 完整的表格
 
-> Note that there will be a noticeable bump in CSS footprint when enabling it. So only do it if you really need it.
-
-```
-.q-(p|m)(t|r|b|l|a|x|y)-<bp>-(none|auto|xs|sm|md|lg|xl)
-```
-
-Examples: `q-pa-xs-md q-pa-sm-sm q-px-md-lg q-py-md-md`
-
-## Table of permutations
-
-| Prefix | Type | Direction | Size | Example |
+| 前缀 | 类型 | 方向 | 大小 | 示例 |
 |--------|------|-----------|------|---------
 | `q-` | `p` (padding) | `t` (top) | `none` | `q-pt-none` |
 | `q-` | `p` (padding) | `t` (top) | `xs` (extra small) | `q-pt-xs` |
@@ -151,12 +140,37 @@ Examples: `q-pa-xs-md q-pa-sm-sm q-px-md-lg q-py-md-md`
 | `q-` | `m` (margin) | `y` (top & bottom) | `xl` (extra large) | `q-my-xl` |
 | `q-` | `m` (margin) | `y` (top & bottom) | `auto` | `q-my-auto` |
 
+
+## 响应式间距
+
+当你打开了(`quasar.config.js > framework > cssAddon: true`)时，所有的间距css类还会新增一个带有断点的版本，可以控制在不同尺寸的屏幕下有不同的效果，你可以使用这个功能轻松的构建响应式网站/app。
+
+> 需要注意的是，打开这个功能后，打包的css体积会变大很多，请确保你需要它后再打开。
+
+带有断点的版本语法如下：
+```
+.q-(p|m)(t|r|b|l|a|x|y)-<bp>-(none|auto|xs|sm|md|lg|xl)
+```
+
+例如:
+`q-pa-xs-md` 表示在屏幕尺寸大于xs的时候才会加上一个全部方向大小为md的内边距
+
+`q-ma-sm-sm` 表示在屏幕尺寸大于sm的时候才会加上一个全部方向大小为sm的外边距
+
+`q-px-md-lg` 表示在屏幕尺寸大于md的时候才会加上一个水平方向大小为lg的内边距
+
+`q-my-md-md` 表示在屏幕尺寸大于md的时候才会加上一个垂直方向大小为md的外边距
+
+
 ::: tip
-See more details about the [Flex Addons](/layout/grid/introduction-to-flexbox#flex-addons).
+完整的断点列表见： [breakpoints](/style/breakpoints).
 :::
 
-## Other Related
-| Class Name | Description |
+## 其他相关
+| 类名 | 描述 |
 | --- | --- |
-| `no-margin` | Removes any applied margins |
-| `no-padding` | Removes any applied padding |
+| `no-margin` | 移除外边距 |
+| `no-padding` | 移除内边距 |
+
+## 视频讲解
+[B站视频讲解](https://www.bilibili.com/video/BV1pA4y197Zc?p=10)

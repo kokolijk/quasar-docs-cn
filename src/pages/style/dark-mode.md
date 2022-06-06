@@ -1,33 +1,33 @@
 ---
-title: Dark Mode
-desc: Handle dark mode with Quasar.
+title: 暗色/夜间模式
+desc: 处理Quasar的暗黑/夜间模式。
 related:
   - /quasar-plugins/dark
   - /style/theme-builder
 ---
+暗黑模式是一种补充模式，该设计减少了设备屏幕发出的光，用于把UI变成深色，同时要页面的保持可读性。
 
-Dark Mode is a supplemental mode that can be used to display mostly dark surfaces on the UI. The design reduces the light emitted by device screens while maintaining the minimum color contrast ratios required for readability.
+暗色模式有一下优点：
 
-The advantages of Dark Mode are that:
+* 缓解眼睛疲劳
+* 在夜晚或者光线暗的环境下提供更舒服的阅读体验
+* 可以减少OLED 或者 AMOLED屏幕的耗电量
 
-* It enhances visual ergonomics by reducing eye strain.
-* Provides comfort of use at night or in dark environments.
-* It conserves battery power mainly if the device screen is OLED or AMOLED, thereby enabling device usage for longer periods without charging.
+## 它是如何工作的
 
-## What it does
+1. 它会给页面设置一个默认的黑色背景（这个黑色是可以通过`body.body--dark` css 选择器来自定义的)。
+2. 所有的Quasar 组件都有一个`dark`的属性，当切换为暗色模式时，这个属性会被自动的设置为`true`。
 
-1. It sets a default dark background for the pages (that you can easily override through CSS with the `body.body--dark` selector)
-2. All Quasar components with a `dark` property will have it automatically set to `true`. No need to do it manually.
+自动检测的原理是动态监听`prefers-color-scheme: dark`媒体查询属性。如果浏览器或者系统切换为了暗色模式，Quasar应用也会自动切换为暗色模式（在dark mode设置为`auto`的情况下）
 
-The auto-detection works by looking at `prefers-color-scheme: dark` media query and is dynamic. If the client browser/platform switches to/from Dark mode while your app is running, it will also update Quasar's Dark mode (if Dark mode is set to `auto`).
 
-## How to use it
+## 如何使用
 
-You can easily switch between Dark mode and light mode (which is default) through the [Dark Plugin](/quasar-plugins/dark).
+你可以通过[Dark Plugin](/quasar-plugins/dark)来轻松的切换Quasar应用的暗色/亮色模式。
 
 ## How to style your app
 
-Since your app can be in Dark mode or not, you can easily style it by taking advantage of the `body` tag attached CSS class: `body--light` or `body--dark`. **That is if you want to support both modes.**
+你可以通过`body--light` or `body--dark`这两个css类名来定制你的app在亮色/暗色模式下的表现。
 
 ```css
 .body--light {
@@ -38,11 +38,13 @@ Since your app can be in Dark mode or not, you can easily style it by taking adv
   /* ... */
 }
 ```
-
-Should you wish to override the default Dark mode page background color:
+例如，修改模式的暗色模式的背景色：
 
 ```css
 body.body--dark {
   background: #000
 }
 ```
+
+## 视频讲解
+[B站视频讲解](https://www.bilibili.com/video/BV1pA4y197Zc?p=11)

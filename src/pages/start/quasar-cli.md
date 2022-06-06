@@ -3,7 +3,7 @@ title: Quasar CLI
 desc: How to use the Quasar CLI, the premium developer experience for free.
 ---
 
-Quasar CLI 我们引以为傲的脚手架，你可以通过它构建:
+Quasar CLI 是我们引以为傲的脚手架，你可以通过它构建:
 
 * SPA (Single Page App，单页应用)
 * SSR (Server-side Rendered App，服务端渲染) (可与PWA同时存在)
@@ -84,11 +84,11 @@ $ npm i -g @quasar/cli
 
 ## Quasar CLI是如何工作的
 
-Quasar CLI（`@Quasar/CLI`）与`@Quasar/app vite`或`@Quasar/app`协同工作。第一个是可选的（但强烈建议），允许您直接运行Quasar CLI命令和一些其他有用的命令，如Quasar upgrade（无缝升级Quasar包）或Quasar serve（通过ad-hoc webserver为您的可分发服务器提供服务）。第二个包是它的核心（运行重要的命令-dev、build、inspect、info、descripe等），它被本地安装到每个Quasar项目文件夹中。
+Quasar CLI（`@Quasar/CLI`）与`@Quasar/app vite`或`@Quasar/app`协同工作。第一个包是可选的（但强烈建议安装），它允许你直接运行Quasar CLI的命令，如`quasar upgrade`（无缝升级Quasar的依赖）或`quasar serve`（帮助启动一个webserver服务）。第二个包是它的核心（包含重要的命令:dev、build、inspect、info、descripe等），它会被本地安装到每个Quasar项目文件夹中。
 
 #### 在没有全局安装`@quasar/cli` 的情况下怎么运行
 
-虽然你没有全局安装`@quasar/cli`，但是`@quasar/app-vite` 或者 `@quasar/app-webpack`其中的一个会被安装到你的项目依赖中去，所以你可以通过下面两种方式来运行Cli的命令：
+虽然你没有全局安装`@quasar/cli`，但是`@quasar/app-vite` 或者 `@quasar/app-webpack`其中的一个会被安装到你的项目本地依赖中去，所以你可以通过下面两种方式来运行CLI的命令：
 
 1. 在你项目的`package.json`中添加启动脚本，例如:
     ```js

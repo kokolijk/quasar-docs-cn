@@ -30,7 +30,7 @@
           q-toolbar
             q-btn(flat, dense, round, :icon="mdiArrowLeft")
             q-space
-            q-toggle.q-mr-sm(dense, v-model="darkMode", :dark="dark.primary", color="red", label="Dark page")
+            q-toggle.q-mr-sm(dense, v-model="darkMode", :dark="dark.primary", color="red", label="暗黑模式")
             q-btn(flat, dense, round, :icon="mdiMagnify")
             q-btn(flat, dense, round, :icon="mdiMenu")
 
@@ -68,7 +68,7 @@
   q-separator.q-mt-lg.q-mb-sm
 
   .col-12.row.items-center.justify-end.q-gutter-md
-    q-btn(color="black", label="Export", @click="exportDialog = true")
+    q-btn(color="black", label="导出", @click="exportDialog = true")
 
   q-dialog(v-model="exportDialog")
     q-card
@@ -106,12 +106,13 @@
 import { ref, reactive, computed, watch } from 'vue'
 import { colors, setCssVar } from 'quasar'
 
-import {
-  fasSquare, fasCircle, fasPlay
-} from '@quasar/extras/fontawesome-v6'
+import { fasSquare, fasCircle, fasPlay } from '@quasar/extras/fontawesome-v6'
 
 import {
-  mdiArrowLeft, mdiMagnify, mdiMenu, mdiMapMarkerRadius
+  mdiArrowLeft,
+  mdiMagnify,
+  mdiMenu,
+  mdiMapMarkerRadius
 } from '@quasar/extras/mdi-v6'
 
 const { luminosity } = colors
@@ -154,10 +155,24 @@ export default {
       dark[ color ] = luminosity(val) <= 0.4
     }
 
-    const list = [ 'primary', 'secondary', 'accent', 'dark', 'positive', 'negative', 'info', 'warning' ]
+    const list = [
+      'primary',
+      'secondary',
+      'accent',
+      'dark',
+      'positive',
+      'negative',
+      'info',
+      'warning'
+    ]
 
     list.forEach(entry => {
-      watch(() => colors[ entry ], val => { update(entry, val) })
+      watch(
+        () => colors[ entry ],
+        val => {
+          update(entry, val)
+        }
+      )
     })
 
     const pageClass = computed(() => {
@@ -167,7 +182,8 @@ export default {
     })
 
     const sassExport = computed(() => {
-      return '// src/css/quasar.variables.sass\n\n' +
+      return (
+        '// src/css/quasar.variables.sass\n\n' +
         `$primary   : ${colors.primary}\n` +
         `$secondary : ${colors.secondary}\n` +
         `$accent    : ${colors.accent}\n\n` +
@@ -176,10 +192,12 @@ export default {
         `$negative  : ${colors.negative}\n` +
         `$info      : ${colors.info}\n` +
         `$warning   : ${colors.warning}`
+      )
     })
 
     const scssExport = computed(() => {
-      return '// src/css/quasar.variables.scss\n\n' +
+      return (
+        '// src/css/quasar.variables.scss\n\n' +
         `$primary   : ${colors.primary};\n` +
         `$secondary : ${colors.secondary};\n` +
         `$accent    : ${colors.accent};\n\n` +
@@ -188,6 +206,7 @@ export default {
         `$negative  : ${colors.negative};\n` +
         `$info      : ${colors.info};\n` +
         `$warning   : ${colors.warning};`
+      )
     })
 
     const quasarCliExport = computed(() => {
@@ -249,7 +268,14 @@ return {
       exportDialog,
       exportTab,
       list,
-      sideColors: [ 'secondary', 'dark', 'positive', 'negative', 'info', 'warning' ],
+      sideColors: [
+        'secondary',
+        'dark',
+        'positive',
+        'negative',
+        'info',
+        'warning'
+      ],
 
       pageClass,
       sassExport,

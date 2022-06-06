@@ -1,28 +1,28 @@
 ---
-title: Sass/SCSS Variables
-desc: How to use the Sass/SCSS variables defined by Quasar.
+title: Sass/SCSS 变量
+desc: 如何使用Quasar预设的Sass/SCSS 变量。
 components:
   - style/SassVariables
 ---
-
-There are Sass/SCSS variables built into Quasar that you can change and/or use within devland should you wish to.
+Quasar内置了一些 Sass/SCSS 变量，你可以根据需要使用/修改它们。
 
 ::: warning
-This applies to Quasar CLI managed apps only.
+这只适用于使用Quasar CLI创建的项目。
 :::
 
-## Usage 用法
-In your app's `*.vue` files or in the .sass/.scss files you can use any Quasar Sass/SCSS variables (examples: `$primary`, `$red-1`), and any other Sass/SCSS variables that you declared in your `/src/css/quasar.variables.sass` or the perfectly equivalent `/src/css/quasar.variables.scss` (depending on your favorite Sass flavour) when using Quasar CLI.
+## 用法
+如果你是使用Quasar CLI创建的项目，那么你可以在项目的`*.vue`文件或者 `.sass/.scss` 文件中直接使用Quasar内置的Sass/SCSS 变量，（例如：`$primary`, `$red-1`）。
+也可以使用你在`/src/css/quasar.variables.scss`文件中自定义的Sass/SCSS 变量（或者是`/src/css/quasar.variables.sass`文件）
 
 ```html
-<!-- Notice lang="sass" -->
+<!-- 注意 lang="sass" -->
 <style lang="sass">
 div
   color: $red-1
   background-color: $grey-5
 </style>
 
-<!-- Notice lang="scss" -->
+<!-- 注意 lang="scss" -->
 <style lang="scss">
 div {
   color: $red-1;
@@ -32,48 +32,43 @@ div {
 ```
 
 ::: tip
-You don't need to necessarily have the `src/css/quasar.variables.sass` or `src/css/quasar.variables.scss` files if you want to access the Quasar Sass/SCSS variables. Create one of them only if you want to customize the variables.
+ `src/css/quasar.variables.sass` 或 `src/css/quasar.variables.scss`文件并不是必须的，只有你想自定义变量或者修改Quasar内置的变量时，你才需要创建他们
 :::
 
 ::: danger
-When creating or deleting any of the `src/css/quasar.variables.*` files, you will need to restart your dev server in order for it to take effect. However, when you change the content of these files it won't be necessary to also restart.
+当你创建/删除 `src/css/quasar.variables.sass` 或 `src/css/quasar.variables.scss`文件后，你可能需要重启一次Quasar，否则将看不到项目的变化。
 :::
 
-## Caveat
+## 警告
 
-Quasar CLI detects if the file contains at least one '$' character, and if so, it automatically imports the Quasar Sass/SCSS variables.
-
-If, however, you have a nested importing statement and the file from which you are importing does not contain any '$' characters, this won't work. In this case, you need to add a simple comment (`// $`) so Quasar can detect at least one '$' character:
-
+sass/scss文件中至少得有一个'$'字符才会被Quasar CLI自动注入内置的Sass/SCSS变量
+所以你想在你导入的sass/scss文件中使用上述预设的变量，得先保证，这个文件中至少有一个'$'字符，或者，你可以使用一个简单的注释来处理这个问题(`// $`)
 ```html
 <style lang="sass">
 // $
+//注意上一行的注释
 
 @import 'some-file.sass'
-// now some-file.sass can benefit
-// from Quasar Sass variables too
-// due to comment above
+// 由于上面的注释中带有一个$，
+// 现在 'some-file.sass'文件中可以访问到上述的Quasar预设的Sass/SCSS 变量了
 </style>
 ```
+在`quasar.config.js > css`中定义的 `.sass/.scss` 文件也需要这么做
 
-Same is required for .sass/.scss files that are included from quasar.config.js > css.
+## 自定义
 
-## Customizing
-If you want to customize the variables (or add your own) and your project does not yet have a `src/css/quasar.variables.sass` (or `src/css/quasar.variables.scss`) file, create one of them yourself. It doesn't matter if you pick .sass or .scss as the extension for this file. **Having one of them will provide the variables to ALL your .sass AND .scss project files (including inside of .vue files).**
-
-You can freely override any of Quasar's variables (see next section) in those files. For convenience, if you picked Sass or SCSS when you created your Quasar project folder, these files initially contain only the brand color-related variables.
+如果你想修改/添加上述的变量，你需要在你的项目中创建一个`src/css/quasar.variables.sass` (或 `src/css/quasar.variables.scss`)文件，然后在这个文件中修改/新增变量，如果你在创建项目的时候勾选了Sass 或者 SCSS，这个文件会在项目初始化的时候帮你创建好。**选择scss后者sass后缀都是可以的，他们的语法不同，取决于你更喜欢哪种，这个文件中的变量会被添加到项目中所有的 `sass/scss/.vue`文件中。**
 
 ::: tip
-Quasar is very easy to customize without the need of tampering with the Sass/SCSS variables, so make sure that you really need to do that. Not having one of the two files will actually speed up your build while the default variables will still be supplied to .sass/.scss/.vue files.
+Quasar的定制化已经非常高了，如果不是必须，我们不推荐你修改这个文件。事实上，若项目中不存在这个变量文件，quasar将使用默认的变量，反而会加快构建速度。
 :::
 
 ## Quasar's CSS
-Quasar's own CSS is compiled using the variables file (if it exists), but there are multiple forms (sass, scss). So there has to be a priority list for Quasar CLI:
+Quasar的css是根据这个变量文件编译的（如果存在的话），下面是优先级
+* 若 `src/css/quasar.variables.scss` 存在则优先使用它
+* 否则，若 `src/css/quasar.variables.sass` 存在，则使用它
+* 否者，使用预编译的Quasar CSS
 
-* Does `src/css/quasar.variables.scss` exists? Use that.
-* If not, then does `src/css/quasar.variables.sass` exists? Use that.
-* If not, then use pre-compiled Quasar CSS.
-
-## Variables list
+## 变量列表
 
 <sass-variables />

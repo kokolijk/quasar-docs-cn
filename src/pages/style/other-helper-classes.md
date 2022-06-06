@@ -1,63 +1,65 @@
 ---
-title: Other CSS Helper Classes
-desc: The list of CSS helper classes for mouse, size, orientation and border that are supplied by Quasar.
+title: 其他的 CSS 工具类
+desc: Quasar提供的关于鼠标，大小，方向和边框相关的CSS辅助类。
 ---
-There are a lot of CSS classes that you can use while writing your Vue templates. Very handy to ease the complexity of your VueModels and templates.
 
-The list below is not complete. Also check the other CSS documentation pages like Typography, Visibility, Shadows, Positioning.
+Quasar有很多可直接用在Vue模版中的CSS工具类，熟练使用他们，可以很大程度上降低Vue模版的复杂度。
 
-## Mouse Related
+下面的列表并不是全部CSS工具类，如需使用请观看别的关于样式的页面，例如，[字体排版](/style/typography)，[可见性](/style/visibility)，[阴影](/style/shadows)，[定位](/style/positioning)和[间距](/style/spacing)等等。
 
-| Class Name | Description |
+
+## 鼠标相关
+
+| CSS类名 | 描述 |
 | --- | --- |
-| `non-selectable` | User won't be able to select DOM node along with its text |
-| `no-pointer-events` | DOM element does not become a target of mouse events - clicks, hover and so on |
+| `non-selectable` | 控制文字不可被选择 |
+| `no-pointer-events` | DOM元素不能作为事件的对象，如click相关, hover等等 |
 | `all-pointer-events` | The opposite of `no-pointer-events` |
-| `cursor-pointer` | Change mouse pointer on DOM element to look as if on a clickable link |
-| `cursor-not-allowed` | Change mouse pointer on DOM element to look as if action will not be carried out |
-| `cursor-inherit` | Change mouse pointer on DOM element to look as the same as parent option |
-| `cursor-none` | No mouse cursor is rendered |
+| `cursor-pointer` | 将鼠标指针落在元素上时的样式设置为一只小手  |
+| `cursor-not-allowed` | 将鼠标指针落在元素上时的样式设置为禁用的样式  |
+| `cursor-inherit` | 将鼠标指针落在元素上时的样式设置为继承父元素 |
+| `cursor-none` | 禁用鼠标指针样式 |
 
-## Scroll Related
+## 滚动相关
 
-| Class Name | Description |
+| CSS类名 | 描述 |
 | --- | --- |
-| `scroll` | Applies CSS tweaks to make scroll work at its best on ALL platforms |
-| `no-scroll` | Hides scrollbars on the DOM node |
-| `overflow-auto` | Sets overflow to auto |
-| `overflow-hidden` | Sets overflow to hidden |
-| `overflow-hidden-y` | Sets overflow to hidden on the y-axis |
-| `hide-scrollbar` | Removes the scrollbar |
+| `scroll` | 应用CSS调整，使滚动在所有平台上都能发挥最佳效果  |
+| `no-scroll` | 隐藏滚动条 Hides scrollbars on the DOM node |
+| `overflow-auto` | 设置 overflow 为 auto |
+| `overflow-hidden` |   设置 overflow 为 hidden |
+| `overflow-hidden-y` | 设置 overflow 为 hidden on the y-axis |
+| `hide-scrollbar` | 删除滚动条  |
 
-## Size Related
-| Class Name | Description |
+## 大小相关
+| CSS类名 | 描述 |
 | --- | --- |
-| `fit` | Width and Height is set to 100% |
-| `full-height` | Height is set to 100% |
-| `full-width` | Width is set to 100% with left and right margins 0 |
-| `window-height` | Height is set to 100vh with top and bottom margins 0 |
-| `window-width` | Width is set to 100vw with left and right margins 0 |
-| `block` | Sets `display` property set to `block` |
+| `fit` | Width 和 Height 设置为 100% |
+| `full-height` | Height 设置为 100% |
+| `full-width` | Width 设置为 100%，并且左右外边距设置为0 |
+| `window-height` | Height 设置为 100vh，并且上下外边距设置为0 |
+| `window-width` | Width 设置为 100vw 并且左右边距设置为0 |
+| `block` | 设置 `display` 属性为 设置为 `block` |
 
-## Orientation Related
-| Class Name | Description |
+## 方向相关
+| CSS类名 | 描述 |
 | --- | --- |
-| `rotate-45` | Rotate by 45 degrees |
-| `rotate-90` | Rotate by 90 degrees |
-| `rotate-135` | Rotate by 135 degrees |
-| `rotate-180` | Rotate by 180 degrees |
-| `rotate-225` | Rotate by 225 degrees |
-| `rotate-270` | Rotate by 270 degrees |
-| `rotate-315` | Rotate by 315 degrees |
+| `rotate-45` | 旋转 45 度 |
+| `rotate-90` | 旋转 90 度 |
+| `rotate-135` | 旋转 135 度 |
+| `rotate-180` | 旋转 180 度 |
+| `rotate-225` | 旋转 225 度 |
+| `rotate-270` | 旋转 270 度 |
+| `rotate-315` | 旋转 315 度 |
 | `flip-horizontal` | Flip DOM element horizontally |
 | `flip-vertical` | Flip DOM element vertically |
 
 ## Border Related
-| Class Name | Description |
+| CSS类名 | 描述 |
 | --- | --- |
-| `no-border` | Removes any border |
-| `no-border-radius` | Removes any radius the border might have |
-| `no-box-shadow` | Removes any applied box-shadow |
-| `no-outline` | Removes any outline applied on the border |
-| `rounded-borders` | Applies a generic border radius |
-| `border-radius-inherit` | Inherit border radius from the parent element |
+| `no-border` | 移除所有边框 |
+| `no-border-radius` | 移除边框的圆角  |
+| `no-box-shadow` | 移除边框的阴影  |
+| `no-outline` | 移除边框的框线  |
+| `rounded-borders` | 加上常规一个圆角  |
+| `border-radius-inherit` | 从父元素继承圆角  |

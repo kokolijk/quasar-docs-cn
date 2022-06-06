@@ -1,54 +1,55 @@
 ---
-title: App Internationalization (i18n)
-desc: How to use vue-i18n in a Quasar app.
+title: 应用程序多语言国际化
+desc: 如何在Quasar中使用 vue-i18n。
 related:
   - /options/rtl-support
   - /options/quasar-language-packs
 ---
 
-Internationalization is a design process that ensures a product (a website or application) can be adapted to various languages and regions without requiring engineering changes to the source code. Think of internationalization as readiness for localization.
+国际化是指在不修改代码的情况下使网站/应用程序可以适应各种语言和地区。
 
 ::: tip
-The recommended package for handling website/app is [vue-i18n](https://github.com/intlify/vue-i18n-next). This package should be added through a [@quasar/app-vite Boot File](/quasar-cli-vite/boot-files) or a [@quasar/app-webpack Boot File](/quasar-cli-webpack/boot-files). On the Boot File documentation page you can see a specific example for plugging in vue-i18n.
+推荐使用 [vue-i18n](https://github.com/intlify/vue-i18n-next)来完成多语言国际化，需要使用一个boot文件来引用它到项目中 ，你可以在[@quasar/app-vite Boot File](/quasar-cli-vite/boot-files) 或者 [@quasar/app-webpack Boot File](/quasar-cli-webpack/boot-files)页面找到引用vue-i18n的示例代码。
 :::
 
 ::: warning
-Quasar documentation assumes you are already familiar with [vue-i18n](https://github.com/intlify/vue-i18n-next). Below it's described only the basics of how to make use of it in a Quasar CLI project. For the full list of its features please visit the [Vue I18n documentation](https://vue-i18n.intlify.dev).
+需要你提前了解 [vue-i18n](https://github.com/intlify/vue-i18n-next)用法。下面只讲解针对Quasar CLIL的使用方式。更多信息请查看： [Vue I18n documentation](https://vue-i18n.intlify.dev).
 :::
 
-## Setup manually
+## 手动安装
 
-If you missed enabling i18n during `quasar create` wizard, here is how you can set it up manually.
+如果你在创建项目的时候勾选了`vue-i18n`，那么你的项目中已经被安装了`vue-i18n`，并且已经写好了boot文件来引用它，如果没有的话安装下述步骤来安装：
 
-1. Install the `vue-i18n` dependency into your app.
+1. 安装 `vue-i18n` 依赖。
 
 ```bash
-$ yarn add vue-i18n@next
-// or:
-$ npm install vue-i18n@next
+ yarn add vue-i18n@next
+// 或者:
+ npm install vue-i18n@next
 ```
 
-2. Create a file `src/boot/i18n.js` with following content:
+2. 创建 `src/boot/i18n.js` 文件，并将下述内容复制进去:
 
 ```js
 import { createI18n } from 'vue-i18n'
 import messages from 'src/i18n'
 
 export default ({ app }) => {
-  // Create I18n instance
+  // 创建实例
   const i18n = createI18n({
     locale: 'en-US',
     messages
   })
 
-  // Tell app to use the I18n instance
+  // 注册到vue中
   app.use(i18n)
 }
 ```
 
-3. Create a folder (/src/i18n/) in your app which will hold the definitions for each language that you'll support. Example: [src/i18n](https://github.com/quasarframework/quasar-starter-kit/tree/master/template/src/i18n). Notice the "import messages from 'src/i18n'" from step 2. This is step where you write the content that gets imported.
+3. 创建一个文件夹 (/src/i18n/) 用于存放支持的多语言文案。 例如: [src/i18n](https://github.com/quasarframework/quasar-starter-kit/tree/master/template/src/i18n)。
+注意第二步的 "import messages from 'src/i18n'" from step 2. This is step where you write the content that gets imported.
 
-4. Now reference this file in `quasar.config.js` in the `boot` section:
+4. 记得在 `quasar.config.js` 中引用这个boot文件 in the `boot` section:
 
 ```js
 // quasar.config.js
@@ -62,10 +63,10 @@ return {
 }
 ```
 
-Now you are ready to use it in your pages.
+现在已经准备好了，可以在项目中使用了
 
-## Setting up Translation Blocks in your SFCs
-
+## 在SFC中设置好要翻译的片段 Setting up Translation Blocks in your SFCs
+为了在
 If we want to add support to the `<i18n>` tag inside a SFC (single file component) in a Quasar CLI project then we need to modify the existing configuration.
 
 We first install the `@intlify/vue-i18n-loader` package:

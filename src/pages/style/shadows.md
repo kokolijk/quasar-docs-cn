@@ -1,32 +1,31 @@
 ---
 title: CSS Shadows (Elevation)
-desc: The list of CSS classes supplied by Quasar for defining elevation on DOM elements.
+desc: Quasar提供了css工具类帮助给DOM添加阴影
 ---
-Simple yet effective way to add shadows to create a depth/elevation effect.
-The shadows are in accordance to Material Design specifications (24 levels of depth).
+Quasar提供了css工具类帮助给DOM添加阴影，使用起来简单又高效，并且这些阴影遵循Material Design的设计规范（将阴影分为24个等级，数字越大，阴影越深）
 
 ## Usage 用法
 
-| CSS Class Name | Description |
+| CSS类名 | 描述 |
 | --- | --- |
-| `no-shadow` | Remove any shadow |
-| `inset-shadow` | Set an inset shadow on top |
-| `inset-shadow-down` | Set an inset shadow on bottom |
-| `shadow-1` | Set a depth of 1 |
-| `shadow-2` | Set a depth of 2 |
-| `shadow-N` | Where `N` is an integer from 1 to 24. |
-| `shadow-transition` | Apply the default CSS transition effect on the shadow |
+| `no-shadow` | 移除阴影 |
+| `inset-shadow` | 在DOM的上方添加嵌入式风格的阴影  |
+| `inset-shadow-down` | 在DOM的下方添加嵌入式风格的阴影  |
+| `shadow-1` | 1级阴影 |
+| `shadow-2` | 2级阴影 |
+| `shadow-N` |  `N`可以被替换为1到24之间的整数，表示阴影的等级，数字越大，阴影越深 |
+| `shadow-transition` | 给CSS阴影添加默认的过渡效果 |
 
-<doc-example title="Standard shadows" file="shadows/Standard" scrollable />
+<doc-example title="标准的阴影" file="shadows/Standard" scrollable />
 
-The shadows above point towards the bottom of the element. If you want them to point towards the top of the element, add `up` before the number:
+上面的示例中，阴影都被添加到了元素的下方，若你想把阴影添加到元素的上方，可以通过在数字前加上`up`来实现。例如：
 
-| CSS Class Name | Description |
+| CSS类名 | 描述 |
 | --- | --- |
-| `shadow-up-1` | Set a depth of 1 |
-| `shadow-up-2` | Set a depth of 2 |
-| `shadow-up-N` | Where `N` is an integer from 1 to 24. |
+| `shadow-up-1` | 1级阴影 |
+| `shadow-up-2` | 2级阴影 |
+| `shadow-up-N` |`N`可以被替换为1到24之间的整数，表示阴影的等级，数字越大，阴影越深 |
 
-<doc-example title="Shadows pointing up" file="shadows/PointingUp" scrollable />
+<doc-example title="在元素上方的阴影" file="shadows/PointingUp" scrollable />
 
-<doc-example title="Inset shadow" file="shadows/Inset" />
+<doc-example title="内嵌的阴影" file="shadows/Inset" />
