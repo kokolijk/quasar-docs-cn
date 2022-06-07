@@ -1,28 +1,26 @@
 ---
-title: Animations
-desc: Helper CSS animations supplied by Animate.css for a Quasar app.
+title: 动画
+desc:  为Quasar程序提供Animate.css支持
 ---
+可以通过[Vue Transition Component](https://vuejs.org/api/built-in-components.html)来处理CSS过渡效果，为组件/DOM加上一个出现或消失时的动画。
 
-CSS Transitions can be handled by the [Vue Transition Component](https://vuejs.org/api/built-in-components.html). The transitions are used for entering (appearing) or leaving (disappearing) animations.
+Quasars提供一组可以直接使用的CSS动画。这些动画来自[Animate.css](https://animate.style/)，共有80多种动画开箱即用，打开Animate.css网站查看在线演示效果。
 
-However, Quasar can supply a big list of ready to use CSS animations. The animation effects are borrowed from [Animate.css](https://animate.style/). So there are 80+ animation types available for you to use out of the box. Check the list either on Animate.css website or on the demo available for this page.
+> 请前往 [Vue](https://vuejs.org/api/built-in-components.html#transition)页面学习更多关于如何使用`<transition>`组件。
 
-> Please refer to [Vue](https://vuejs.org/api/built-in-components.html#transition) documentation for learning on how to use the Vue supplied `<transition>` component.
-
-## Installation
-Edit `/quasar.config.js`.
+## 安装
+修改 `/quasar.config.js`.
 ```js
-// embedding all animations
+// 开启全部的动画
 animations: 'all'
 
-// or embedding only specific animations
+// 或者只开启部分动画
 animations: [
   'bounceInLeft',
   'bounceOutRight'
 ]
 ```
-
-If you are building a website, you can also skip configuring quasar.config.js and use a CDN link which points to Animate.css like this (following is just an example, Google for latest link). Remember this will require an Internet connection for your user, as opposed to bundling from within quasar.config.js.
+如果你只是构建网站，那么你可以跳过配置quasar.config.js的步骤，通过CDN的方式引入Animate.css，示例：
 
 ```html
 <!-- src/index.template.html -->
@@ -38,11 +36,12 @@ If you are building a website, you can also skip configuring quasar.config.js an
 ```
 
 ::: warning
+注意，若你通过link标签引入Animate.css，所有的animation CSS
 It should be noted that when you import Animate.css through the `<link>` tag, all animation CSS classes must be prefixed with `animate__`. This is a breaking change in the migration of Animate.css from v3 to v4. If you want to avoid using prefixes, you can import the [compat version](https://animate.style/#migration). However, if you're using the **Quasar CLI**, no additional changes are needed.
 :::
 
-## Usage 用法
-Notice the string "animated" in front of the actual animation name.
+## 用法
+注意每个动画名前都有一个"animated"字段
 
 ```html
 <!-- Example with wrapping only one DOM element / component -->
