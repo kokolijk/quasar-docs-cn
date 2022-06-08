@@ -1,5 +1,5 @@
 ---
-title: Close Popup Directive
+title: 关闭弹层 Close Popup Directive
 desc: Helper Vue directive when working with QDialog or QMenu.
 keys: close-popup
 related:
@@ -7,41 +7,44 @@ related:
   - /vue-components/menu
 ---
 
-This directive is a helper when dealing with [QDialog](/vue-components/dialog) and [QMenu](/vue-components/menu) components. When attached to a DOM element or component then that component will close the QDialog or QMenu (whichever is first parent) when clicked/tapped.
+这是一个与[QDialog（对话框/弹窗）](/vue-components/dialog) 和 [QMenu（菜单）](/vue-components/menu)组件搭配使用的指令。当一个DOM/组件绑定了v-close-popup指令后，触发其点击/触摸事件时会关闭其父组件上弹出的 QDialog 或 QMenu。
 
 ## ClosePopup API
 
 <doc-api file="ClosePopup" />
 
-## Usage 用法
+## 用法
 
-### Basic 基础
+### 基础
 
-<doc-example title="With a QMenu" file="ClosePopup/Menu" />
+<doc-example title="与QMenu配合" file="ClosePopup/Menu" />
 
-<doc-example title="With a QDialog" file="ClosePopup/Dialog" />
+<doc-example title="与QDialog配合" file="ClosePopup/Dialog" />
 
-### Closing multiple levels
+### 设置关闭多层级
 
-You can also close multiple levels of popups by supplying a level number to the directive:
+你也可以通过为指令绑定一个数字的方式设置所关闭的弹窗的层级：
 
 ```html
 <... v-close-popup="3">
 ```
 
-* If value is 0 or boolean `false` then directive is disabled
-* If value is < 0 then it closes all popups in the chain
-* If value is 1 or boolean `true` or undefined then it closes only the parent popup
-* If value is > 1 it closes the specified number of parent popups in the chain (note that chained QMenus are considered 1 popup only & QPopupProxy separates chained menus)
+* 若绑定的值是 0 或  `false` 则表示禁用此指令
+* 若绑定的值小于 0 则它会关闭此DOM链上的所有弹层
+* 若绑定的值是 1 或 `true` 或 undefined 则它只会关闭父主组件上的弹层
+* 若绑定的值是 大于 1，则表示它会精确的关闭此DOM链上对应层级的弹层 (注意链式的QMenus的层级始终被视为1)
 
-Notice below that chained QMenus (one directly put under the other) do not require you to specify multiple levels. When `v-close-popup` is used in a chained QMenu, it considers all directly chained QMenus as one level only.
+注意下方的链式QMenus示例，它不需要精确的指定层级，当`v-close-popup`作用到多层级链式的QMenus会将其全部关闭。
 
 <doc-example title="Menu tree" file="ClosePopup/MenuTree" />
 
-In the example below, the menu uses 2 levels, which means it will also close the dialog, since the dialog is its parent:
+在下面的示例中，菜单上绑定的v-close-popup="2"，其值为2，所以点击关闭菜单时也会关闭dialog
 
 <doc-example title="Dialog with menu" file="ClosePopup/DialogMenu" />
 
-Notice below that the inner dialog is a child of the main dialog. This is the only way for which `v-close-popup` will be able to close both dialogs while using multiple levels. Otherwise, if dialogs are siblings (or any other similar scenario where one dialog is not child of the other), you will have to use v-models on dialogs and handle closing of both dialogs yourself.
+注意一下示例中，可以打开一个多层级的dialog，当v-close-popup指令的值设置为2的时候可以同时关闭两个dialog
 
 <doc-example title="Dialog in Dialog" file="ClosePopup/DialogInDialog" />
+
+### 视频讲解
+若仍有疑惑，请观看[视频讲解](https://www.bilibili.com/video/BV1vA4y1d7qr)

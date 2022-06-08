@@ -1,6 +1,6 @@
 ---
 title: Intersection Directive
-desc: Vue directive that uses Intersection Observer API to call a method when user scrolls and brings a component into or out of view.
+desc: 使用Intersection Observer API监听当DOM/组件在可视窗口中出现或者消失时触发一个函数的Vue指令。
 keys: intersection
 related:
   - /vue-components/intersection
@@ -8,74 +8,73 @@ related:
   - /vue-directives/scroll
   - /options/transitions
 ---
-
-"Intersection" is a Quasar directive that enables a method to be called when the user scrolls and the DOM element (or component) that it is applied to comes into or out of the viewport.
-
-Under the hood, it uses the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
+"Intersection"是使用[Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)监听当DOM/组件在可视窗口中出现或者消失（由页面滚动导致）时触发一个函数的Quasar指令。
 
 ::: warning
-Not all browsers support the Intersection Observer API. Most [modern browsers](https://caniuse.com/#search=intersection) do, but other browsers do not. If you need to support older browsers, you can install and import (into a boot file) the official W3C [polyfill](https://github.com/w3c/IntersectionObserver).
+并不是所有的浏览器都支持 Intersection Observer API，虽然大部分浏览器都支持，但是如果你需要兼容老的浏览器，那么你需要安装W3C官方的[polyfill](https://github.com/w3c/IntersectionObserver)（通过一个boot文件引入）。
 :::
 
 ## Intersection API
 
 <doc-api file="Intersection" />
 
-## Usage 用法
+## 用法
 
-Reading the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) first will be best in your understanding of how this directive works.
+请先阅读 [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)页面，以便你了解这个指令工作的原理。
 
-Intersection directive takes either a handler function as an argument or an Object. The Object form looks like this:
 
+Intersection 指令可以接受一个函数或者对象作为其值，对象的格式如下：
 ```js
 {
   handler: /* Function */,
   cfg: {
-    // any options from "Intersection observer options"
-    // on https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
+    // 可选的参数，来自 "Intersection observer options"
+    // 参考 https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API
     root: null, // DOM Element
     rootMargin: '0px',
     threshold: 0
   }
 }
 ```
+当使用对象格式的值时，其中只有`handler`时必填的。
 
-When using the Object form, only the `handler` key is mandatory.
-
-The handler Function takes one parameter, which is an [IntersectionObserverEntry](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry).
+这个`handler`函数有一个参数，参考[IntersectionObserverEntry](https://developer.mozilla.org/en-US/docs/Web/API/IntersectionObserverEntry).
 
 ::: tip
-Scroll within the examples below until the observed element is in view. Then scroll it out of view.
+在下面的示例中，请持续滚动页面直到被监测的对象出现/消失
 :::
 
-### Basic 基础
+### 基础
 
-<doc-example title="Basic" file="Intersection/Basic" no-edit />
+<doc-example title="常规" file="Intersection/Basic" no-edit />
 
-### Trigger once
+### 只触发一次
 
-The directive can be used with the `once` modifier (ex: `v-intersection.once`). Once the observed element comes into view, the handler Function will be called and the observing will stop. This allows you to control the processing overhead if all you need is to be notified when the observed element starts to be visible on screen.
+这个指令可以被`once`修饰符修饰，(示例: `v-intersection.once`)，则hanler函数只会被触发一次。如果你所需要的只是在观察到的元素开始出现在屏幕上时得到通知，那么你可以使用这种方式以控制开销。
 
-<doc-example title="Once" file="Intersection/Once" no-edit />
+<doc-example title="仅触发一次" file="Intersection/Once" no-edit />
 
-### Using an Object
+### 使用对象格式
 
-By passing in an Object as the directive's value (instead of a Function), you can control all the options (like threshold) of the Intersection Observer.
+使用一个对象来作为指令的值，你可以更精确的控制监听的行为。
 
-<doc-example title="Supplying configuration Object" file="Intersection/ObjectForm" no-edit />
+<doc-example title="使用配置对象" file="Intersection/ObjectForm" no-edit />
 
-### Advanced
+### 进阶
 
-Below is a more advanced example of what you can do. The code takes advantage of the HTML `data` attribute. Basically, by setting `data-id` with the index of the element in a loop, this can be retrieved via the passed in `entry` to the handler as `entry.target.dataset.id`. If you are unfamiliar with the `data` attribute you can read more [here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) about using the `data` attribute.
+下面是一些更高阶的用法，代码中使用了 HTML的 `data` 属性，将元素的索引绑定到`data-id`上，然后通过handler函数的`entry`参数中的`entry.target.dataset.id`访问到设置的id。如果你还不熟悉HTML的data属性，请参考：[here](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)。
 
-<doc-example title="Advanced" file="Intersection/Advanced" no-edit />
+<doc-example title="进阶" file="Intersection/Advanced" no-edit />
 
-In the example below, we show multiple cards, but only the visible ones get rendered. The secret is in the wrapper which has `v-intersection` attached to it and a fixed height and width (which acts as a necessary filler when the inner content is not rendered -- so that scrolling won't erratically jump).
+下面的示例中，我们有非常多的卡片，但是只有处于可视窗口中的卡片才会被渲染。
 
-> The example below can also be written by using [QIntersection](/vue-components/intersection) component which makes everything even more easy.
+> 下面的示例也可以使用 [QIntersection](/vue-components/intersection) 组件以一种更简单的方式和实现。
 
 <doc-example title="Scrolling Cards" file="Intersection/ScrollingCards" scrollable no-edit />
 
 ::: tip
-In the example above we used a Quasar transition. For a full list, please head to [Transitions](/options/transitions) page.
+上面的示例使用了Quasar的过渡效果，关于更多的过渡动画，请查看[Transitions](/options/transitions)页面。
 :::
+
+### 视频讲解
+若仍有疑惑，请观看[视频讲解](https://www.bilibili.com/video/BV1RU4y1y7JJ)

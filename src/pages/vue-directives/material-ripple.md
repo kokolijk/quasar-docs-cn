@@ -1,50 +1,51 @@
 ---
 title: Material Ripples
-desc: Vue directive for easily adding material ripples to your components and DOM elements.
+desc: 帮你轻松实现material design中的涟漪动画的Vue指令。
 keys: material-ripple
 ---
-Material Ripple effect can easily be added to any DOM element (or component) through the `v-ripple` Quasar directive.
+
+Quasar提供了`v-ripple`指令，你可以使用它轻松的为DOM/组件添加一个Material design中的涟漪动画（点击元素后有一个水波效果）
 
 ::: danger
-Do not use this directive on components that already have material ripples baked in (example: `QBtn`). Rather configure the internal ripples through those component's `ripple` property.
+不要在已经有涟漪效果的组件中使用此指令，（例如： `QBtn`），他们都有一个`ripple`属性来控制涟漪效果。
 :::
 
 ## Ripple API
 
 <doc-api file="Ripple" />
 
-## Usage 用法
+## 用法
 
 ::: warning
-Make sure that your DOM element or component has CSS `position: relative` or Quasar CSS helper class `relative-position` attached to it.
+使用前，请确保目标DOM/组件设置了`position: relative` CSS，或者直接使用 `relative-position` Quasar CSS 辅助类。
 :::
 
-### Basic 基础
+### 基础
 
-<doc-example title="Basic" file="Ripple/Basic" />
+<doc-example title="常规" file="Ripple/Basic" />
 
-### Coloring
+### 着色
 
-The Material Ripple takes the CSS color of text by default, but you can configure it:
+Material Ripple默认采用文本的CSS颜色，但这是可配置的：
 
-<doc-example title="Colored" file="Ripple/Colored" />
+<doc-example title="着色" file="Ripple/Colored" />
 
-### Positioning
+### 定位
 
-You can also configure if the ripple should always start from center or not, regardless of the touch point:
+你也可以配置涟漪效果从何处展开，默认从点击处展开，你可以配置始终从DOM中心展开：
 
-<doc-example title="Positioning" file="Ripple/Positioning" />
+<doc-example title="定位" file="Ripple/Positioning" />
 
-### Triggering early
+### 提前触发
 
-By default, the Ripple directive is triggered on click or keyup. However, you can change that and make it trigger earlier, on the first user interaction (mousedown, touchstart, keydown). Please note that in most situations the event sets may overlap (small delay between first and last user interaction) and there is no difference in the user perception, but in certain conditions it may lead to misleading the user.
+默认情况下，Ripple指令在点击或按键时被触发。但是，你可以更改它并使其在第一次用户交互(mousedown, touchstart, keydown)时更早的触发。请注意，在大多数情况下，事件集可能会重叠(第一次和最后一次用户交互之间的小延迟)，用户的感知没有差异，但在某些情况下，这可能会导致误导用户。
 
-This is especially noticeable on touchscreens where if a user accidentally moves their finger after the touchstart it can sometimes be interpreted as a very small scroll event instead of a click so the click event isn't triggered but there is still a ripple.
+这在触摸屏上尤其明显，如果用户在触控启动后不小心移动了手指，它有时会被解释为一个非常小的滚动事件，而不是点击事件，所以点击事件没有被触发，但仍然有一个波纹。
 
 <doc-example title="Triggering immediately" file="Ripple/Early" />
 
-### Disable
+### 禁用
 
-If for some reason you have a scenario where the ripples need to be disabled, then you can assign a Boolean as value for the directive:
+如果出于某些原因，你有一个场景需要禁用波纹，那么你可以为指令分配一个布尔值，来开启/禁用它
 
-<doc-example title="Disable" file="Ripple/Disable" />
+<doc-example title="禁用" file="Ripple/Disable" />

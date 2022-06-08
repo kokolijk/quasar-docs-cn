@@ -1,6 +1,6 @@
 ---
-title: Introduction to Flexbox
-desc: What the flexbox CSS is and how it can be used in a Quasar App.
+title: Flexbox介绍
+desc: 什么是flexbox CSS，如何将其应用到Quasar中
 related:
   - /style/spacing
   - /style/visibility
@@ -8,7 +8,7 @@ related:
   - /layout/grid/gutter
   - /layout/grid/flex-playground
 ---
-
+在[Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)的帮助下，Quasasr提供了大量的CSS辅助类来帮你构建页面。
 Quasar provides lots of CSS classes to help you build your UI easily with the help of [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Think of it like operating with rows and columns with many options at hand.
 
 Flexbox (upon which Quasar Flex CSS classes are based) module aims to provide a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).
