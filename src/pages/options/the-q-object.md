@@ -74,7 +74,7 @@ export default {
 // 选项式api的export之外无法访问到$q
 
 export default {
-  // inside a Vue component script
+  // 在vue组件之内
   ...,
 
   // 这里只是演示在函数中使用

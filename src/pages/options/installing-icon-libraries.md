@@ -1,35 +1,34 @@
 ---
-title: Installing Icon Libraries
-desc: How to use icon libraries in a Quasar app.
+title: 安装图标库
+desc: 如果在Quasar中引用图标库
 related:
   - /options/quasar-icon-sets
   - /vue-components/icon
 ---
 
 ::: tip
-**This page refers to using [webfont icons](/vue-components/icon#webfont-icons) only.** Svg icons do not need any installation step.
+**此页面讲述如何使用字体图标 [webfont icons](/vue-components/icon#webfont-icons) only.**
+Svg图标不需要安装步骤，可直接使用。
 :::
 
-You'll most likely want icons in your website/app and Quasar offers an easy way out of the box for the following icon libraries: [Material Icons](https://material.io/icons/) , [Font Awesome](https://fontawesome.com/icons), [Ionicons](http://ionicons.com/), [MDI](https://materialdesignicons.com/), [Eva Icons](https://akveo.github.io/eva-icons), [Themify Icons](https://themify.me/themify-icons), [Line Awesome](https://icons8.com/line-awesome) and [Bootstrap Icons](https://icons.getbootstrap.com/). But you can [add support for others](/vue-components/icon#custom-mapping) by yourself.
+Quasar已经提供了几套开箱即用的图标库: [Material Icons](https://material.io/icons/) , [Font Awesome](https://fontawesome.com/icons), [Ionicons](http://ionicons.com/), [MDI](https://materialdesignicons.com/), [Eva Icons](https://akveo.github.io/eva-icons), [Themify Icons](https://themify.me/themify-icons), [Line Awesome](https://icons8.com/line-awesome) 和 [Bootstrap Icons](https://icons.getbootstrap.com/).但是你任然可以自行添加其他的图标库 [add support for others](/vue-components/icon#custom-mapping)。
 
 ::: tip
-In regards to webfont icons, you can choose to install one or more of these icon libraries.
+关于字体图标库，你可以选择安装一个或多个。
 :::
 
-## Installing Webfonts
-If you are building a website only, then using a CDN (Content Delivery Network) approach can be an option you can follow. However, when building a mobile or Electron app, you most likely do not want to depend on an Internet connection and Quasar comes with a solution to this problem:
+## 安装字体图标库
+如何你只是构建一个网站，那么你可以使用CDN来引用图标资源，但是如果你需要构建一个离线的手机app或者electron程序，那么你可能不希望它的图标依赖联网的服务。Quasar为你解决了这个问题：
 
-Edit `/quasar.config.js`:
+编辑 `/quasar.config.js` 文件中的:
 
 ```js
 extras: [
   'material-icons'
 ]
 ```
+字体图标会通过 [@quasar/extras](https://github.com/quasarframework/quasar/tree/dev/extras)来提供，你不需要引入他们，只需像上述方式配置`/quasar.config.js`即可，也可以向下面这样同时开启多个图标库：
 
-Webfont icons are available through [@quasar/extras](https://github.com/quasarframework/quasar/tree/dev/extras) package. You don't need to import it in your app, just configure `/quasar.config.js` as indicated above.
-
-Adding more than one set:
 ```js
 extras: [
   'material-icons',
@@ -43,33 +42,32 @@ extras: [
 ]
 ```
 
-For all available options, visit the [GitHub](https://github.com/quasarframework/quasar/tree/dev/extras#webfonts) repository.
+全部可用图标库列表请见： [GitHub](https://github.com/quasarframework/quasar/tree/dev/extras#webfonts)
 
-You're now ready to use the [QIcon](/vue-components/icon) component.
+你现在可以在 [QIcon](/vue-components/icon) 组件中使用这些图标了
 
-## Using CDN as alternative
-If you want to make use of a CDN (Content Delivery Network), all you need to do is to include style tags in your `index.template.html` which point to the CDN URL.
+## 使用CDN替代
 
-In case you follow this path, do not also add the icon sets that you want in `/quasar.config.js > extras`. Play with the [UMD Installation Guide](/start/umd#installation) and edit `index.template.html` as described there.
+如果你想使用CDN，你自需要在`index.template.html`中使用style/link标签去引入CDN资源，但是不要同时在 `/quasar.config.js > extras`中配置。按照[UMD Installation Guide](/start/umd#installation)页面的示例修改`index.template.html`文件。
 
-## Using Fontawesome-Pro
-If you have a Fontawesome v6 Pro license and want to use it instead of the Fontawesome Free version, follow these instructions:
+## 使用 Fontawesome-Pro
+如果你有 Fontawesome v6 Pro 的许可证，你可以按照下述步骤使用Pro版本来替换免费版本：
 
-1. Open the [Linked Accounts section](https://fontawesome.com/account) in Fontawesome's user account page to grab the npm TOKENID (login if necessary).
-2. Create or append TOKENID into the `.npmrc` file (file path same as package.json):
+1. 打开网站 [Linked Accounts section](https://fontawesome.com/account)的用户界面 npm TOKENID
+2. 将复制的TOKENID复制到`.npmrc`（若没有此文件先创建它，文件位于package.json同级目录）
   ```
   @fortawesome:registry=https://npm.fontawesome.com/
   //npm.fontawesome.com/:_authToken=TOKENID
   ```
-3. Install Fontawesome webfonts:
+3. 安装 Fontawesome webfonts 依赖:
   ```bash
-  $ yarn add @fortawesome/fontawesome-pro
+   yarn add @fortawesome/fontawesome-pro
   ```
-4. Create new boot file:
+4. 创建一个新的boot文件:
   ```bash
-  $ quasar new boot fontawesome-pro [--format ts]
+   quasar new boot fontawesome-pro [--format ts]
   ```
-5. Edit `/quasar.config.js`:
+5. 将boot文件添加到 `/quasar.config.js`:
   ```js
   boot: [
     ...
@@ -83,27 +81,23 @@ If you have a Fontawesome v6 Pro license and want to use it instead of the Fonta
     iconSet: 'fontawesome-v6-pro'
   }
   ```
-6. Edit `/src/boot/fontawesome-pro.js`:
+6. 编辑 `/src/boot/fontawesome-pro.js`:
   ```js
-  // required
+  // 必须的
   import '@fortawesome/fontawesome-pro/css/fontawesome.css'
   import '@fortawesome/fontawesome-pro/css/light.css'
-  // do you want these too?
+  // 可选的
   // import '@fortawesome/fontawesome-pro/css/thin.css'
   // import '@fortawesome/fontawesome-pro/css/duotone.css'
   // import '@fortawesome/fontawesome-pro/css/brands.css'
   // import '@fortawesome/fontawesome-pro/css/solid.css'
   // import '@fortawesome/fontawesome-pro/css/regular.css'
   ```
-7. (Optional) Override default icons:
+7. (可选的) 重写默认的图标： Override default icons:
 
-Since the default `font-weight` for fontawesome-pro is `light` or `fal`, some icons used by the framework components may not be desirable. The best way to handle this is to override it in the boot file that you created.
+由于fontawesome-pro默认的 `font-weight` 是 `light` 或 `fal` ，导致一些图标用在组件中可能不太美观，最好在boot文件中覆盖掉它。
 
-For instance, to override the `fal` version of the close icon for chips, do this:
-
-_First_, find the icon used for chip close in Quasar Fontawesome v6 Pro [icon-set source](https://github.com/quasarframework/quasar/blob/dev/ui/icon-set/fontawesome-v6-pro.js).
-
-(Alternatively, you can check inside the render function of the component you are overriding.)
+例如
 
 ```js
 // example

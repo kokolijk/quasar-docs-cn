@@ -1,28 +1,26 @@
 ---
-title: Animations
-desc: Helper CSS animations supplied by Animate.css for a Quasar app.
+title: 动画
+desc:  为Quasar程序提供Animate.css支持
 ---
+可以通过[Vue Transition Component](https://vuejs.org/api/built-in-components.html)来处理CSS过渡效果，为组件/DOM加上一个出现或消失时的动画。
 
-CSS Transitions can be handled by the [Vue Transition Component](https://vuejs.org/api/built-in-components.html). The transitions are used for entering (appearing) or leaving (disappearing) animations.
+Quasars提供一组可以直接使用的CSS动画。这些动画来自[Animate.css](https://animate.style/)，共有80多种动画开箱即用，打开Animate.css网站查看在线演示效果。
 
-However, Quasar can supply a big list of ready to use CSS animations. The animation effects are borrowed from [Animate.css](https://animate.style/). So there are 80+ animation types available for you to use out of the box. Check the list either on Animate.css website or on the demo available for this page.
+> 请前往 [Vue](https://vuejs.org/api/built-in-components.html#transition)页面学习更多关于如何使用`<transition>`组件。
 
-> Please refer to [Vue](https://vuejs.org/api/built-in-components.html#transition) documentation for learning on how to use the Vue supplied `<transition>` component.
-
-## Installation
-Edit `/quasar.config.js`.
+## 安装
+修改 `/quasar.config.js`.
 ```js
-// embedding all animations
+// 开启全部的动画
 animations: 'all'
 
-// or embedding only specific animations
+// 或者只开启部分动画
 animations: [
   'bounceInLeft',
   'bounceOutRight'
 ]
 ```
-
-If you are building a website, you can also skip configuring quasar.config.js and use a CDN link which points to Animate.css like this (following is just an example, Google for latest link). Remember this will require an Internet connection for your user, as opposed to bundling from within quasar.config.js.
+如果你只是构建网站，那么你可以跳过配置quasar.config.js的步骤，通过CDN的方式引入Animate.css，示例：
 
 ```html
 <!-- src/index.template.html -->
@@ -38,14 +36,15 @@ If you are building a website, you can also skip configuring quasar.config.js an
 ```
 
 ::: warning
-It should be noted that when you import Animate.css through the `<link>` tag, all animation CSS classes must be prefixed with `animate__`. This is a breaking change in the migration of Animate.css from v3 to v4. If you want to avoid using prefixes, you can import the [compat version](https://animate.style/#migration). However, if you're using the **Quasar CLI**, no additional changes are needed.
+注意，若你通过link标签引入Animate.css，所有的animation CSS类都需要添加一个`animate__`前缀。这是Animate.css  V3到V4的破坏性更新。如果你想避免使用前缀，你可以选择导入兼容性版本：[compat version](https://animate.style/#migration)。但是，如果你在使用**Quasar CLI**，则不需要理会这些改动。
+
 :::
 
-## Usage 用法
-Notice the string "animated" in front of the actual animation name.
+## 用法
+注意每个动画名前都有一个"animated"字段
 
 ```html
-<!-- Example with wrapping only one DOM element / component -->
+<!-- 单个元素/组件的示例 -->
 <transition
   appear
   enter-active-class="animated fadeIn"
@@ -60,11 +59,11 @@ Notice the string "animated" in front of the actual animation name.
 </transition>
 ```
 
-### Wrapping Multiple Elements
-You can also group components or DOM elements in a transition so that the same effects are applied to all of them simultaneously.
+### 多个元素的动画
+也可以为一组DOM/组件添加过渡动画。
 
 ```html
-<!-- Example with wrapping multiple DOM elements / components -->
+<!-- 多个元素/组件的示例 -->
 <transition-group
   appear
   enter-active-class="animated fadeIn"
@@ -83,8 +82,8 @@ You can also group components or DOM elements in a transition so that the same e
 </transition-group>
 ```
 
-Please note some things in the above example:
+在上面的多元素示例中注意:
 
-1. Note `<transition-group>` instead of `<transition>`.
-2. The components and DOM elements must be keyed, like `key="text"` or `key="email-button"` in the example above.
-3. Both examples above have the Boolean property `appear` specified, which makes the entering animation kick in right after component(s) have been rendered. This property is optional.
+1. 注意使用 `<transition-group>` 代替了 `<transition>`.
+2. DOM/组件都有key属性标记，例如`key="text"` 或者 `key="email-button"`
+3. 上面的两个示例中都使用了`appear`属性，这使得动画在组件渲染后将立即执行一次。此属性是可选的。

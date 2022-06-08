@@ -120,11 +120,11 @@
     "path": "options",
     "children": [
       {
-        "name": "The $q object",
+        "name": "$q对象",
         "path": "the-q-object"
       },
       {
-        "name": "App Icons",
+        "name": "应用图标",
         "path": "app-icons"
       },
       {
@@ -132,39 +132,39 @@
         "path": "seo"
       },
       {
-        "name": "Quasar Language Packs",
+        "name": "Quasar语言包",
         "path": "quasar-language-packs"
       },
       {
-        "name": "App Internationalization",
+        "name": "应用多语言国际化",
         "path": "app-internationalization"
       },
       {
-        "name": "RTL Support",
+        "name": "RTL支持",
         "path": "rtl-support"
       },
       {
-        "name": "Installing Icon Libraries",
+        "name": "安装图标库",
         "path": "installing-icon-libraries"
       },
       {
-        "name": "Quasar Icon Sets",
+        "name": "Quasar图标集合",
         "path": "quasar-icon-sets"
       },
       {
-        "name": "Platform Detection",
+        "name": "平台检测",
         "path": "platform-detection"
       },
       {
-        "name": "Screen Plugin",
+        "name": "屏幕插件",
         "path": "screen-plugin"
       },
       {
-        "name": "Animations",
+        "name": "动画",
         "path": "animations"
       },
       {
-        "name": "Transitions",
+        "name": "过渡",
         "path": "transitions"
       }
     ]

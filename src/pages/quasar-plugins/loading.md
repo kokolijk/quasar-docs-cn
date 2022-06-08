@@ -24,7 +24,7 @@ Loading is a feature that you can use to display an overlay with a spinner on to
 ## Usage 用法
 Loading uses a delay (500ms) to display itself so that quick operations won't make the screen flicker. This happens by showing and then quickly hiding the progress spinner without the user having a chance to see what happens. The delay before showing it eliminates confusion.
 
-Inside a Vue component:
+在vue组件之内:
 
 ```js
 import { useQuasar } from 'quasar'
@@ -40,7 +40,7 @@ setup () {
 }
 ```
 
-Outside of a Vue component:
+在vue组件之外:
 
 ```js
 import {
