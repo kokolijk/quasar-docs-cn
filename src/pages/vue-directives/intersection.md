@@ -75,3 +75,6 @@ Intersection 指令可以接受一个函数或者对象作为其值，对象的�
 ::: tip
 上面的示例使用了Quasar的过渡效果，关于更多的过渡动画，请查看[Transitions](/options/transitions)页面。
 :::
+
+### 视频讲解
+若仍有疑惑，请观看[视频讲解](https://www.bilibili.com/video/BV1RU4y1y7JJ)

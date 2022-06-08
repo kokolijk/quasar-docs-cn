@@ -45,3 +45,6 @@ related:
 注意一下示例中，可以打开一个多层级的dialog，当v-close-popup指令的值设置为2的时候可以同时关闭两个dialog
 
 <doc-example title="Dialog in Dialog" file="ClosePopup/DialogInDialog" />
+
+### 视频讲解
+若仍有疑惑，请观看[视频讲解](https://www.bilibili.com/video/BV1vA4y1d7qr)
