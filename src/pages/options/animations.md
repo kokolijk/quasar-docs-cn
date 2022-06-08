@@ -36,15 +36,15 @@ animations: [
 ```
 
 ::: warning
-注意，若你通过link标签引入Animate.css，所有的animation CSS
-It should be noted that when you import Animate.css through the `<link>` tag, all animation CSS classes must be prefixed with `animate__`. This is a breaking change in the migration of Animate.css from v3 to v4. If you want to avoid using prefixes, you can import the [compat version](https://animate.style/#migration). However, if you're using the **Quasar CLI**, no additional changes are needed.
+注意，若你通过link标签引入Animate.css，所有的animation CSS类都需要添加一个`animate__`前缀。这是Animate.css  V3到V4的破坏性更新。如果你想避免使用前缀，你可以选择导入兼容性版本：[compat version](https://animate.style/#migration)。但是，如果你在使用**Quasar CLI**，则不需要理会这些改动。
+
 :::
 
 ## 用法
 注意每个动画名前都有一个"animated"字段
 
 ```html
-<!-- Example with wrapping only one DOM element / component -->
+<!-- 单个元素/组件的示例 -->
 <transition
   appear
   enter-active-class="animated fadeIn"
@@ -59,11 +59,11 @@ It should be noted that when you import Animate.css through the `<link>` tag, al
 </transition>
 ```
 
-### Wrapping Multiple Elements
-You can also group components or DOM elements in a transition so that the same effects are applied to all of them simultaneously.
+### 多个元素的动画
+也可以为一组DOM/组件添加过渡动画。
 
 ```html
-<!-- Example with wrapping multiple DOM elements / components -->
+<!-- 多个元素/组件的示例 -->
 <transition-group
   appear
   enter-active-class="animated fadeIn"
@@ -82,8 +82,8 @@ You can also group components or DOM elements in a transition so that the same e
 </transition-group>
 ```
 
-Please note some things in the above example:
+在上面的多元素示例中注意:
 
-1. Note `<transition-group>` instead of `<transition>`.
-2. The components and DOM elements must be keyed, like `key="text"` or `key="email-button"` in the example above.
-3. Both examples above have the Boolean property `appear` specified, which makes the entering animation kick in right after component(s) have been rendered. This property is optional.
+1. 注意使用 `<transition-group>` 代替了 `<transition>`.
+2. DOM/组件都有key属性标记，例如`key="text"` 或者 `key="email-button"`
+3. 上面的两个示例中都使用了`appear`属性，这使得动画在组件渲染后将立即执行一次。此属性是可选的。
