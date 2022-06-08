@@ -619,47 +619,47 @@
     "path": "vue-directives",
     "children": [
       {
-        "name": "Close Popup",
+        "name": "Close Popup 关闭弹层",
         "path": "close-popup"
       },
       {
-        "name": "Intersection",
+        "name": "Intersection 交叉",
         "path": "intersection"
       },
       {
-        "name": "Material Ripples",
+        "name": "Material Ripples 涟漪效果",
         "path": "material-ripple"
       },
       {
-        "name": "Mutation",
+        "name": "Mutation 突变",
         "path": "mutation"
       },
       {
-        "name": "Morph",
+        "name": "Morph 形变",
         "path": "morph"
       },
       {
-        "name": "Scroll",
+        "name": "Scroll 滚动",
         "path": "scroll"
       },
       {
-        "name": "Scroll Fire",
+        "name": "Scroll Fire 滚动触发",
         "path": "scroll-fire"
       },
       {
-        "name": "Touch Hold",
+        "name": "Touch Hold 长按",
         "path": "touch-hold"
       },
       {
-        "name": "Touch Pan",
+        "name": "Touch Pan 滑动",
         "path": "touch-pan"
       },
       {
-        "name": "Touch Repeat",
+        "name": "Touch Repeat 重复点击",
         "path": "touch-repeat"
       },
       {
-        "name": "Touch Swipe",
+        "name": "Touch Swipe 轻扫",
         "path": "touch-swipe"
       }
     ]
