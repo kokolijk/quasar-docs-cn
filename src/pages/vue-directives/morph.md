@@ -1,22 +1,24 @@
 ---
 title: Morph Directive
-desc: Vue directive that morphs between DOM elements or even between the two states of the same DOM element.
+desc: Quasar中可以实现dom在两种状态间变化的Vue指令。
 keys: morph
 related:
   - /quasar-utils/morph-utils
 ---
 
-"Morph" is a Quasar directive that provides the ability to morph DOM elements between two states.
+"v-morph"是Quasar提供的指令，它可以使DOM在两种状态间变换。
 
-Under the hood, it uses the Quasar [Morph function util](/quasar-utils/morph-utils).
+底层原理使用了 [Morph函数工具](/quasar-utils/morph-utils).
 
 ## Morph API
 
 <doc-api file="Morph" />
 
-## Usage 用法
+## 用法
 
-Reading the [Morph function util](/quasar-utils/morph-utils) first will be best in your understanding of how this directive works.
+请先阅读 [Morph工具函数](/quasar-utils/morph-utils)页面，有利于理解这个指令的工作原理。
+
+这个指令将组中的一个元素变为另一个元素。变形是通过改变指令的值(model)来匹配变形元素的名称来激活的。
 
 This directive morphs one element in a group into another. The morphing is activated by changing the value (model) of the directive to match the name of the morphing element.
 
