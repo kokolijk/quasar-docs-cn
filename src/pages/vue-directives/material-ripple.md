@@ -49,3 +49,6 @@ Material Ripple默认采用文本的CSS颜色，但这是可配置的：
 如果出于某些原因，你有一个场景需要禁用波纹，那么你可以为指令分配一个布尔值，来开启/禁用它
 
 <doc-example title="禁用" file="Ripple/Disable" />
+
+### 视频讲解
+若仍有疑惑，请观看[视频讲解](https://www.bilibili.com/video/BV1j94y1U7qo)
