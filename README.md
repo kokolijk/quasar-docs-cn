@@ -4,10 +4,10 @@
 
 > 在短时间内构建高性能的vuejs应用程序,基于vuejs的开源前端框架，高性能，内置丰富的css和vue组件库，响应式支持，一套代码可以编译出SPA，PWA，SSR，手机应用和桌面应用
 
-**本仓库是由[我](https://github.com/dongwa)个人维护的quasar中文文档，信息来自：[英文官网](https://quasar.dev)。纯手工，非机器翻译，并且添加了一些个人经验，站点持续翻译中，如果对你有帮助麻烦给我的仓库点一个star✨，谢谢🙏
+本仓库是由[我](https://github.com/dongwa)个人维护的quasar中文文档，信息来自：[英文官网](https://quasar.dev)。纯手工，非机器翻译，并且添加了一些个人经验，站点持续翻译中，如果对你有帮助麻烦给我的仓库点一个star✨，谢谢🙏
 
 
-如果你也想参与翻译，请fork本仓库然后向我提交PR。另外，我的B站账号中有[quasar的视频教程](https://www.bilibili.com/video/BV1pA4y197Zc)欢迎观看👏**
+如果你也想参与翻译，请fork本仓库然后向我提交PR。另外，我的B站账号中有[quasar的视频教程](https://www.bilibili.com/video/BV1pA4y197Zc)欢迎观看👏
 <br>
 <hr>
 <br>
