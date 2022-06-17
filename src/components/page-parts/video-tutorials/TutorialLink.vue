@@ -3,7 +3,7 @@ q-card.full-width.column.tutorial-link.cursor-pointer(flat, bordered, @click.nat
   q-card-section.col.tutorial-link__title
     .text-subtitle2 {{ name }}
     .q-mt-sm {{ desc }}
-  q-img(alt="Tutorial logo", :src="imgUrl")
+  q-img(alt="Tutorial logo", :src="imgUrl", fit="fill", :ratio="16/9")
   q-card-section
     div Created by: {{ author }}
     div

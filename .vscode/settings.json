@@ -2,5 +2,11 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "editor.formatOnSave": false
+  "editor.formatOnSave": false,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "razor": "html",
+    "plaintext": "pug",
+    "vue": "html"
+  }
 }
