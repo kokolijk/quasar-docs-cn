@@ -33,7 +33,9 @@ keys: mutation
 
 ### 撤销/恢复示例
 
-突变观察者的一个用例是在应用程序中实现撤消/重做堆栈。根据过滤要求，您可以观察数据的添加和删除。您可以捕获堆栈中的突变，并使用堆栈实现撤消。撤消过程中的任何突变数据都可以进入重做堆栈。将规范化数据放入撤消堆栈时，不要忘记清除重做堆栈。
-One use-case for the Mutation Observer is implementing an Undo/Redo stack in your application. You can observe additions and removals of data, depending on your filtering requirements. You can capture the mutations in a stack and use the stack to implement an undo. Any mutation data during an undo, can go into a redo stack. Don't forget to clear the redo stack when normalized data is being put into the undo stack.
+`v-mutation`的一个经典用例是在应用中实现撤消/恢复堆栈。你可以根据自己要求监听数据的变化，并将这些变化存储在一个堆栈中，并通过这个堆栈实现撤消/恢复的功能。
 
-<doc-example title="Undo/Redo" file="Mutation/UndoRedo" />
+<doc-example title="撤销/恢复" file="Mutation/UndoRedo" />
+
+### 视频讲解
+若仍有疑惑，请观看[视频讲解](https://www.bilibili.com/video/BV1g94y127ap)
